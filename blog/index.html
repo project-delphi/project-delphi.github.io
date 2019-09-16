@@ -99,15 +99,15 @@ navbar-dark bg-dark
 <p>I'm going to be speaking on MLOps soon. I also came across the term <em>AIOps</em> in my preparation. Initially I had thought it was just a buzzy synonym for MLOps. However, after investigating some more, it seems at least some organizations differentiate between the two.</p>
 <h3 id="MLOps">MLOps<a class="anchor-link" href="aiops-vs-mlops/#MLOps">¶</a>
 </h3>
-<p>MLOps is the process of taking a ML solution and bringing it to production. It needs a culture and tools that connect concerns in ML systems development with concerns in ML systems operations<a href="https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf">1</a>. This touches on a number of themes such as CI/CD, data reliability, monitoring, scaling, decoupling, and fast deployment to production, avoiding fragile systems.</p>
+<p>MLOps is the process of taking a ML solution and bringing it to production. It needs a culture and tools that connect concerns in ML systems development with concerns in ML systems operations - <a href="https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf">[1]</a>. This touches on a number of themes such as CI/CD, data reliability, monitoring, scaling, decoupling, and fast deployment to production, avoiding fragile systems.</p>
 <h3 id="AIOps">AIOps<a class="anchor-link" href="aiops-vs-mlops/#AIOps">¶</a>
 </h3>
 <p>Ops, or Operations - already went through a revolution known as DevOps - where changes and deployment became something that an application developer can do by using cloud services and orchestration software.</p>
-<p>AIOps is about bringing machine learning techniques to solve Ops problems such as reliability, monitoring, capacity management, service desks and even more automation than natively available through DevOps <a href="https://www.lakesidesoftware.com/blog/guide-aiops-tools-2019-how-choose-key-concepts">2</a>.</p>
+<p>AIOps is about bringing machine learning techniques to solve Ops problems such as reliability, monitoring, capacity management, service desks and even more automation than natively available through DevOps - <a href="https://www.lakesidesoftware.com/blog/guide-aiops-tools-2019-how-choose-key-concepts">[2]</a>.</p>
 <h3 id="Causality">Causality<a class="anchor-link" href="aiops-vs-mlops/#Causality">¶</a>
 </h3>
 <p>One interesting aspect of AIOps is that causality is very important to many of the problems in the space. That is knowing the cause of problems and possible solutions is as important as predicting problems such as failure.</p>
-<p>In many traditionally ML algorithms, causality is not the focus and it is left to the realm of statistics to identify which features cause changes in the target<a href="http://w3.mi.parisdescartes.fr/~chambaz/Atelier209/07vanderLaan.pdf">3</a>.</p>
+<p>In many traditionally ML algorithms, causality is not the focus and it is left to the realm of statistics to identify which features cause changes in the target - [[3]].(<a href="http://w3.mi.parisdescartes.fr/~chambaz/Atelier209/07vanderLaan.pdf">http://w3.mi.parisdescartes.fr/~chambaz/Atelier209/07vanderLaan.pdf</a>).</p>
 
 </div>
 </div>
@@ -162,7 +162,7 @@ navbar-dark bg-dark
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>Often it helps to refresh grounding in the fundamentals. I'm writing a sequence of posts to touch base with some machine learning/stats techniques - but without features.</p>
 <p>Without features, we are forced to focus on the learning task with just univariate data. This give context to charts and often flattens the cute maths that we can spend too much time on.</p>
-<p>In the major cultural split of prediction and causation - there really isn't much causation without features - that's the whole point of causation to link some subset of features to an outcome or target <a href="https://arxiv.org/pdf/1101.0891.pdf">1</a>.</p>
+<p>In the major cultural split of prediction and causation - there really isn't much causation without features - that's the whole point of causation to link some subset of features to an outcome or target - <a href="https://arxiv.org/pdf/1101.0891.pdf">[1]</a>.</p>
 <p>One other reason to do this, is that when features are held constant at some level - say for some kind of causality analysis - we can still look at the univariate variable of interest.</p>
 <p>Let's break our foray into featureless machine learning using the standard groupings for ML algorithms. That is:</p>
 <ul>
