@@ -3,17 +3,30 @@
 " lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="description" content="Ravi Kalia's Blog">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Ravi Kalia Blog</title>
-<link href="../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
-<link href="../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
-<link href="../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
+<title>Featureless Machine Learning | Ravi Kalia Blog</title>
+<link href="../../assets/css/all-nocdn.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/ipython.min.css" rel="stylesheet" type="text/css">
+<link href="../../assets/css/nikola_ipython.css" rel="stylesheet" type="text/css">
 <meta name="theme-color" content="#5670d4">
 <meta name="generator" content="Nikola (getnikola.com)">
-<link rel="alternate" type="application/rss+xml" title="RSS" href="../rss.xml">
-<link rel="canonical" href="https://project-delphi.github.io/blog/">
-<!--[if lt IE 9]><script src="../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<link rel="alternate" type="application/rss+xml" title="RSS" href="../../rss.xml">
+<link rel="canonical" href="https://project-delphi.github.io/blog/featureless-machine-learning/">
+<!--[if lt IE 9]><script src="../../assets/js/html5.js"></script><![endif]--><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+<meta name="author" content="Ravi Kalia">
+<meta property="og:site_name" content="Ravi Kalia Blog">
+<meta property="og:title" content="Featureless Machine Learning">
+<meta property="og:url" content="https://project-delphi.github.io/blog/featureless-machine-learning/">
+<meta property="og:description" content="Featureless Machine Learning¶
+
+
+
+
+
+
+Often it helps to refresh grounding in the fundamentals. I'm writing a sequence of posts to touch base with some machine learning/stats techniques - but without fea">
+<meta property="og:type" content="article">
+<meta property="article:published_time" content="2019-09-16T14:38:54-04:00">
 </head>
 <body>
 <a href="#content" class="sr-only sr-only-focusable">Skip to main content</a>
@@ -35,27 +48,34 @@ navbar-dark bg-dark
         <div class="collapse navbar-collapse" id="bs-navbar">
             <ul class="navbar-nav mr-auto">
 <li class="nav-item">
-<a href="../index.html" class="nav-link">Home</a>
+<a href="../../index.html" class="nav-link">Home</a>
                 </li>
 <li class="nav-item">
-<a href="../contact/index.html" class="nav-link">Contact</a>
+<a href="../../contact/index.html" class="nav-link">Contact</a>
                 </li>
 <li class="nav-item">
-<a href="../talks/index.html" class="nav-link">Talks</a>
+<a href="../../talks/index.html" class="nav-link">Talks</a>
                 </li>
 <li class="nav-item">
-<a href="../publications/index.html" class="nav-link">Publications</a>
+<a href="../../publications/index.html" class="nav-link">Publications</a>
                 </li>
 <li class="nav-item">
-<a href="../archive.html" class="nav-link">Blog</a>
+<a href="../../archive.html" class="nav-link">Blog</a>
                 </li>
 <li class="nav-item">
-<a href="../categories/" class="nav-link">Tags</a>
+<a href="../../categories/" class="nav-link">Tags</a>
 
                 
             </li>
 </ul>
-<ul class="navbar-nav navbar-right"></ul>
+<ul class="navbar-nav navbar-right">
+<li class="nav-item">
+    <a href="index.ipynb" id="sourcelink" class="nav-link">Source</a>
+    </li>
+
+
+                
+            </ul>
 </div>
 <!-- /.navbar-collapse -->
     </div>
@@ -65,36 +85,36 @@ navbar-dark bg-dark
         <!--Body content-->
         
         
+<article class="post-text h-entry hentry postpage" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title" itemprop="headline name"><a href="." class="u-url">Featureless Machine Learning</a></h1>
 
-    
-
-
-    
-<div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="featureless-machine-learning/" class="u-url">Featureless Machine Learning</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Ravi Kalia
+                    Ravi Kalia
             </span></p>
             <p class="dateline">
-            <a href="featureless-machine-learning/" rel="bookmark">
+            <a href="." rel="bookmark">
             <time class="published dt-published" datetime="2019-09-16T14:38:54-04:00" itemprop="datePublished" title="2019-09-16">2019-09-16</time></a>
             </p>
                 <p class="commentline">
         
-    <a href="featureless-machine-learning/#disqus_thread" data-disqus-identifier="cache/posts/featureless-machine-learning.html">Comments</a>
+    <a href="#disqus_thread" data-disqus-identifier="cache/posts/featureless-machine-learning.html">Comments</a>
 
 
+            
         </p>
-</div>
-    </header><div class="e-content entry-content">
+<p class="sourceline"><a href="index.ipynb" class="sourcelink">Source</a></p>
+
+        </div>
+        
+
+    </header><div class="e-content entry-content" itemprop="articleBody text">
     <div>
 <div class="cell border-box-sizing text_cell rendered">
 <div class="prompt input_prompt">
 </div>
 <div class="inner_cell">
 <div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Featureless-Machine-Learning">Featureless Machine Learning<a class="anchor-link" href="featureless-machine-learning/#Featureless-Machine-Learning">¶</a>
+<h2 id="Featureless-Machine-Learning">Featureless Machine Learning<a class="anchor-link" href="#Featureless-Machine-Learning">¶</a>
 </h2>
 </div>
 </div>
@@ -142,15 +162,31 @@ navbar-dark bg-dark
 </div>
 </div>
     </div>
-    </article>
-</div>
-
-
-
+    <aside class="postpromonav"><nav></nav></aside><section class="comments hidden-print"><h2>Comments</h2>
         
-       <script>var disqus_shortname="https-project-delphi-github-io";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-SDRP1VVYu+tgAGKhddBSl5+ezofHKZeI+OzxakbIe/Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
+        
+        <div id="disqus_thread"></div>
+        <script>
+        var disqus_shortname ="https-project-delphi-github-io",
+            disqus_url="https://project-delphi.github.io/blog/featureless-machine-learning/",
+        disqus_title="Featureless Machine Learning",
+        disqus_identifier="cache/posts/featureless-machine-learning.html",
+        disqus_config = function () {
+            this.language = "en";
+        };
+        (function() {
+            var dsq = document.createElement('script'); dsq.async = true;
+            dsq.src = 'https://' + disqus_shortname + '.disqus.com/embed.js';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+        })();
+    </script><noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a>
+</noscript>
+    <a href="https://disqus.com" class="dsq-brlink" rel="nofollow">Comments powered by <span class="logo-disqus">Disqus</span></a>
+
+
+        </section><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML" integrity="sha256-SDRP1VVYu+tgAGKhddBSl5+ezofHKZeI+OzxakbIe/Y=" crossorigin="anonymous"></script><script type="text/x-mathjax-config">
         MathJax.Hub.Config({tex2jax: {inlineMath: [['$latex ','$'], ['\\(','\\)']]}});
-        </script><!--End of body content--><footer id="footer"><div class="text-center">
+        </script></article><script>var disqus_shortname="https-project-delphi-github-io";(function(){var a=document.createElement("script");a.async=true;a.src="https://"+disqus_shortname+".disqus.com/count.js";(document.getElementsByTagName("head")[0]||document.getElementsByTagName("body")[0]).appendChild(a)}());</script><!--End of body content--><footer id="footer"><div class="text-center">
 <p>
 <span class="fa-stack fa-2x">
   <a href="https://twitter.com/ravkalia1">
@@ -192,7 +228,7 @@ navbar-dark bg-dark
 </div>
 
 
-        <script src="../assets/js/all-nocdn.js"></script><script>
+        <script src="../../assets/js/all-nocdn.js"></script><script>
     baguetteBox.run('div#content', {
         ignoreClass: 'islink',
         captions: function(element) {

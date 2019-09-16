@@ -19,4 +19,4 @@ I have experience with a wide repertoire of ML/DL (Computer Vision and NLP) tech
 
 As a machine learning engineer I developed the ability to create profitable ML products suitable to market opportunities. I enjoy working in groups with developers, pair programming, implementing, presenting and sharing good practice.
 
-I'm interested in scaling up and reducing technical debt in Productionized Machine Learning Systems, what is now called AI/MLOps.
+I'm interested in scaling up and reducing technical debt in Productionized Machine Learning Systems, what is now called MLOps.

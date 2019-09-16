@@ -1,2 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Mon, 16 Sep 2019 17:44:41 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs></channel></rss>
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Mon, 16 Sep 2019 19:39:01 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Featureless Machine Learning</title><link>https://project-delphi.github.io/blog/featureless-machine-learning/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h2 id="Featureless-Machine-Learning"&gt;Featureless Machine Learning&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/featureless-machine-learning/#Featureless-Machine-Learning"&gt;¶&lt;/a&gt;&lt;/h2&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;p&gt;Often it helps to refresh grounding in the fundamentals. I'm writing a sequence of posts to touch base with some machine learning/stats techniques - but without features.&lt;/p&gt;
+&lt;p&gt;Without features, we are forced to focus on the learning task with just univariate data. This give context to charts and often flattens the cute maths that we can spend too much time on.&lt;/p&gt;
+&lt;p&gt;In the major cultural split of prediction and causation - there really isn't much causation without features - that's the whole point of causation to link some subset of features to an outcome or target &lt;a href="https://arxiv.org/pdf/1101.0891.pdf"&gt;1&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;One other reason to do this, is that when features are held constant at some level - say for some kind of causality analysis - we can still look at the univariate variable of interest.&lt;/p&gt;
+&lt;p&gt;Let's break our foray into featureless machine learning using the standard groupings for ML algorithms. That is:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Supervised Learning&lt;ul&gt;
+&lt;li&gt;Classification&lt;/li&gt;
+&lt;li&gt;Regression&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;Unsupervised Learning &lt;ul&gt;
+&lt;li&gt;Data Reduction&lt;/li&gt;
+&lt;li&gt;Clustering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;We'll break these into separate posts focused on each group of problems.&lt;/p&gt;
+&lt;p&gt;(We won't dwell on reinforcement learning, since I don't have enough exposure to the area to discuss it.)&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/featureless-machine-learning/</guid><pubDate>Mon, 16 Sep 2019 18:38:54 GMT</pubDate></item></channel></rss>
