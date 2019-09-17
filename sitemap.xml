@@ -11,11 +11,11 @@
  </url>
  <url>
   <loc>https://project-delphi.github.io/archive.html</loc>
-  <lastmod>2019-09-17T01:22:00Z</lastmod>
+  <lastmod>2019-09-17T20:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/</loc>
-  <lastmod>2019-09-17T01:22:00Z</lastmod>
+  <lastmod>2019-09-17T20:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/aiops-vs-mlops/</loc>
@@ -32,6 +32,10 @@
  <url>
   <loc>https://project-delphi.github.io/blog/graphs-graphs-everywhere/</loc>
   <lastmod>2019-09-17T01:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://project-delphi.github.io/blog/intrusion-detection-system/</loc>
+  <lastmod>2019-09-17T20:32:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/learning-git/</loc>
