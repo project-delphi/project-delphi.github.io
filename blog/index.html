@@ -71,7 +71,205 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="aiops-vs-mlops/" class="u-url">AIOps vs MLOps</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="causality-applications-in-2019/" class="u-url">Causality Applications In 2019</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Ravi Kalia
+            </span></p>
+            <p class="dateline">
+            <a href="causality-applications-in-2019/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-09-16T17:22:26-04:00" itemprop="datePublished" title="2019-09-16">2019-09-16</time></a>
+            </p>
+                <p class="commentline">
+        
+    <a href="causality-applications-in-2019/#disqus_thread" data-disqus-identifier="cache/posts/causality-applications-in-2019.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Causality:-Applications-in-2019">Causality: Applications in 2019<a class="anchor-link" href="causality-applications-in-2019/#Causality:-Applications-in-2019">¶</a>
+</h2>
+<p>It's now well established that there are <a href="http://www.stat.cmu.edu/~ryantibs/journalclub/breiman_2001.pdf">two cultures in data modelling</a>. These cultures are focused on one of:</p>
+<ul>
+<li>prediction (discriminative modeling), or</li>
+<li>causality inferred from a data generating model (generative modeling)</li>
+</ul>
+<p>Much of the machine learning community has used algorithmic solutions for prediction. Causality has not received as much attention in recent applications.</p>
+<p>There are three main schools of thought addressing causality:</p>
+<ul>
+<li>Computer Science</li>
+<li>Statistics</li>
+<li>Econometrics</li>
+</ul>
+<p>In another post we'll get into the details of these approaches (they all focus on how to block and account for confounders and aggregation strategies over the levels of blocked confounders).</p>
+<p>In an ideal world we would perform experiments and confidently find causal links between variables. However, most of the data being generated is observational which presents some challenges.</p>
+<h3 id="AIOps">AIOps<a class="anchor-link" href="causality-applications-in-2019/#AIOps">¶</a>
+</h3>
+<p>In AIOps (using ML to aid solving Ops problems) some of the problems need prediction. However, given the cost of appliances and need for preemptive action before problems such as failure or delays occur, there is a need to identify which subset of features affect a target and how they do so.</p>
+<h3 id="Growth-Hacking">Growth Hacking<a class="anchor-link" href="causality-applications-in-2019/#Growth-Hacking">¶</a>
+</h3>
+<p>Growth Hacking is a set of principles to achieve fast sustainable growth using low cost alternatives to traditional marketing. Growth is usually defined as number of recurring users.</p>
+<p>The traditional measure of causality is to perform A/B testing controlling for confounding on features. Statistically if we measure number of users, we're looking at Poisson distribution or binomial estimate of changes in proportions. Alternatively, Poisson processes can be used to model the distribution.</p>
+<p>One rather important metric in growth hacking is the user retention rate. One way that this could be causally measured would be to leverage survival analysis methodology - again controlling for confounding.</p>
+<p>Of course in a fast growing business the features are usually confounding and changing rapidly. This presents a set of challenges which need to be carefully teased apart.</p>
+<h3 id="Customer-Sentiment">Customer Sentiment<a class="anchor-link" href="causality-applications-in-2019/#Customer-Sentiment">¶</a>
+</h3>
+<p>Finding the levers of customer or user sentiment is an open problem. That is identifying those features which</p>
+<p>A lot of these causal problems are related to data that is graphical (nodes and edges) by nature. It will be interesting to see how these develop.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="graphs-graphs-everywhere/" class="u-url">Graphs, Graphs, Everywhere</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Ravi Kalia
+            </span></p>
+            <p class="dateline">
+            <a href="graphs-graphs-everywhere/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-09-16T17:17:40-04:00" itemprop="datePublished" title="2019-09-16">2019-09-16</time></a>
+            </p>
+                <p class="commentline">
+        
+    <a href="graphs-graphs-everywhere/#disqus_thread" data-disqus-identifier="cache/posts/graphs-graphs-everywhere.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Graphs,-Graphs,-Everywhere">Graphs, Graphs, Everywhere<a class="anchor-link" href="graphs-graphs-everywhere/#Graphs,-Graphs,-Everywhere">¶</a>
+</h2>
+<p>I've revisited <a href="https://en.wikipedia.org/wiki/Graph_theory">mathematical graphs</a> (as opposed to <a href="https://en.wikipedia.org/wiki/Chart">charts</a>) in a number of settings in recent weeks. It's great to see graph theory at work in the world of 1's and 0's.</p>
+<h3 id="Git">Git<a class="anchor-link" href="graphs-graphs-everywhere/#Git">¶</a>
+</h3>
+<p>I'm preparing a short course on git - and the most natural way to introduce the topic is with mathematical graphs. There's a lot to this perspective but broadly - commits are child nodes of earlier commits, going back to the root. Branches are just movable pointers to different commits.</p>
+<h3 id="Machine-Learning-On-Graphs">Machine Learning On Graphs<a class="anchor-link" href="graphs-graphs-everywhere/#Machine-Learning-On-Graphs">¶</a>
+</h3>
+<p>Arxiv papers are regularly raising the issue that many of the successful algorithms in Machine Learning depend on euclidean distance between points - <a href="https://arxiv.org/pdf/1611.08097.pdf">[1]</a>. However so much of our experiences and real world data records are not euclidean - in particular metric geometry seldom holds. There's been an explosion of research in applying graphs and manifolds as inputs and outputs to machine learning.</p>
+<h4 id="Neural-Networks">Neural Networks<a class="anchor-link" href="graphs-graphs-everywhere/#Neural-Networks">¶</a>
+</h4>
+<p>Superficially choosing a neural network architecture is all about choosing a graph structure where inputs can flow to outputs over the edges, with many layers (Deep Learning) producing impressive results for a range of problems. Recurrent Neural Networks are also a type of graph, a linked list. Just worth noting the graphs, but tangential to non-euclidean learning.</p>
+<p>Convolutional neural networks - can be cast as local graph filters convolving to tensor data - particularly pixel data.</p>
+<h4 id="Relationship-Networks">Relationship Networks<a class="anchor-link" href="graphs-graphs-everywhere/#Relationship-Networks">¶</a>
+</h4>
+<p>More interesting, relationship networks data is being generated all the time. People and businesses can be observed as nodes and the relationships, transactions between them as edges connecting nodes.</p>
+<p>There is active research on graphs with convolutional learning to learn graph structure with astounding results - <a href="https://tkipf.github.io/graph-convolutional-networks/">[2]</a>.</p>
+<p>Such networks are non-metric and more so, non-euclidean by nature; graphs are just a natural way to model them.</p>
+<h4 id="Causality">Causality<a class="anchor-link" href="graphs-graphs-everywhere/#Causality">¶</a>
+</h4>
+<p>In trying to understand causality, assuming we have enough relevant covariates, then blocking confounders allows <em>ignorability</em> to hold and then aggregation can be applied to estimate causal relationships.</p>
+<p>One popular way to do this is using Judea Pearl's do-calculus on DAGs of probability distributions and relationships between covariates and targets. Although somewhat unwieldy this is a promising area to model causality - along with variational Bayes methods. These DAG's are just graph structures where the relationships between variables are edges, and the variables themselves are node.</p>
+<p>Graphs seem to be occurring with increasing regularity. Their use to solve problems will be fascinating.</p>
+<p>Watch. This. Space.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="learning-git/" class="u-url">Learning Git</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Ravi Kalia
+            </span></p>
+            <p class="dateline">
+            <a href="learning-git/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-09-16T17:16:03-04:00" itemprop="datePublished" title="2019-09-16">2019-09-16</time></a>
+            </p>
+                <p class="commentline">
+        
+    <a href="learning-git/#disqus_thread" data-disqus-identifier="cache/posts/learning-git.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Learning-Git">Learning Git<a class="anchor-link" href="learning-git/#Learning-Git">¶</a>
+</h2>
+<h3 id="Git-As-A-VCS">Git As A VCS<a class="anchor-link" href="learning-git/#Git-As-A-VCS">¶</a>
+</h3>
+<h3 id="Commits-As-Nodes-On-A-Graph">Commits As Nodes On A Graph<a class="anchor-link" href="learning-git/#Commits-As-Nodes-On-A-Graph">¶</a>
+</h3>
+<h3 id="Git-Branches">Git Branches<a class="anchor-link" href="learning-git/#Git-Branches">¶</a>
+</h3>
+<h3 id="Git-Merging">Git Merging<a class="anchor-link" href="learning-git/#Git-Merging">¶</a>
+</h3>
+<h3 id="Github">Github<a class="anchor-link" href="learning-git/#Github">¶</a>
+</h3>
+<h3 id="WorkFlows">WorkFlows<a class="anchor-link" href="learning-git/#WorkFlows">¶</a>
+</h3>
+<h4 id="Git-Flow">Git Flow<a class="anchor-link" href="learning-git/#Git-Flow">¶</a>
+</h4>
+<h4 id="GitHub-Flow">GitHub Flow<a class="anchor-link" href="learning-git/#GitHub-Flow">¶</a>
+</h4>
+<h4 id="GitLab-Flow">GitLab Flow<a class="anchor-link" href="learning-git/#GitLab-Flow">¶</a>
+</h4>
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="aiops-vs-mlops/" class="u-url">AIOps vs MLOps</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Ravi Kalia
@@ -107,7 +305,7 @@ navbar-dark bg-dark
 <h3 id="Causality">Causality<a class="anchor-link" href="aiops-vs-mlops/#Causality">¶</a>
 </h3>
 <p>One interesting aspect of AIOps is that causality is very important to many of the problems in the space. That is knowing the cause of problems and possible solutions is as important as predicting problems such as failure.</p>
-<p>In many traditionally ML algorithms, causality is not the focus and it is left to the realm of statistics to identify which features cause changes in the target - [[3]].(<a href="http://w3.mi.parisdescartes.fr/~chambaz/Atelier209/07vanderLaan.pdf">http://w3.mi.parisdescartes.fr/~chambaz/Atelier209/07vanderLaan.pdf</a>).</p>
+<p>In many traditionally ML algorithms, causality is not the focus and it is left to the realm of statistics to identify which features cause changes in the target - <a href="http://w3.mi.parisdescartes.fr/~chambaz/Atelier209/07vanderLaan.pdf">[3]</a>.</p>
 
 </div>
 </div>
