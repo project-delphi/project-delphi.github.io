@@ -71,7 +71,35 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="featureless-machine-learning-classification/" class="u-url">Featureless Machine Learning: Classification</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="directed-acyclic-graphs/" class="u-url">Directed Acyclic Graphs</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Ravi Kalia
+            </span></p>
+            <p class="dateline">
+            <a href="directed-acyclic-graphs/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-09-18T17:26:42-04:00" itemprop="datePublished" title="2019-09-18">2019-09-18</time></a>
+            </p>
+                <p class="commentline">
+        
+    <a href="directed-acyclic-graphs/#disqus_thread" data-disqus-identifier="cache/posts/directed-acyclic-graphs.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<p>Write your post here.</p>
+
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="featureless-machine-learning-classification/" class="u-url">Featureless Machine Learning: Classification</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Ravi Kalia
@@ -304,20 +332,24 @@ navbar-dark bg-dark
 <p>A detached HEAD state is when a commit is navigated to without a branch. It is also possible to change the tip node of a branch by forcing a change.</p>
 <h3 id="Combining-Branches">Combining Branches<a class="anchor-link" href="learning-git/#Combining-Branches">¶</a>
 </h3>
-<p><img src="images/git.png" alt="Repo in Folder"></p>
+<p><img src="https://i.stack.imgur.com/nWYnQ.png" alt="Repo in Folder"></p>
+<p>To deeply understand combining branches, we need to understand the storage locations and data model of git. However, as a user - the API, given through commands, is often enough:</p>
 <p>There are three main ways to combine branches:</p>
 <ul>
-<li>pull (which is a fetch followed by a merge for a remote branch)</li>
 <li>merge </li>
 <li>rebase </li>
+<li>pull (which is a fetch followed by a merge for a remote branch)</li>
 </ul>
 <h4 id="Fetch">Fetch<a class="anchor-link" href="learning-git/#Fetch">¶</a>
 </h4>
+<p>Remote repositories have local tracking branches when linked to a local repository. A fetch command updates the tracking branch to match the commits up to the tip of the remote repository's branch.</p>
 <h4 id="Merge">Merge<a class="anchor-link" href="learning-git/#Merge">¶</a>
 </h4>
-<p>It is possible to create a new commit which combines two branches.</p>
+<p>It is possible to create a new commit which combines two branches. Merges happen when a commit is added to a branch that incorporates the tip commit of another branch. If there are conflicts, the git user has to choose how to fix those.</p>
+<p>Once the merge is completed, the merge commit is the leaf tip on the branch being merged into. Depending on the workflow the branch that was merged from can be deleted.</p>
 <h4 id="Pull">Pull<a class="anchor-link" href="learning-git/#Pull">¶</a>
 </h4>
+<p>A pull is a fetch from remote repository branch, followed by a merge. If the merge fails, then the user is prompted to resolve the conflict or abort.</p>
 <h4 id="Rebase-And-Reset">Rebase And Reset<a class="anchor-link" href="learning-git/#Rebase-And-Reset">¶</a>
 </h4>
 <h3 id="Commonly-Used-Git-Commands">Commonly Used Git Commands<a class="anchor-link" href="learning-git/#Commonly-Used-Git-Commands">¶</a>
@@ -330,11 +362,19 @@ navbar-dark bg-dark
 </h3>
 <h3 id="WorkFlows">WorkFlows<a class="anchor-link" href="learning-git/#WorkFlows">¶</a>
 </h3>
-<h4 id="Git-Flow">Git Flow<a class="anchor-link" href="learning-git/#Git-Flow">¶</a>
+<h4 id="Centralized-Workflow">Centralized Workflow<a class="anchor-link" href="learning-git/#Centralized-Workflow">¶</a>
 </h4>
-<h4 id="GitHub-Flow">GitHub Flow<a class="anchor-link" href="learning-git/#GitHub-Flow">¶</a>
+<h4 id="Feature-Branch-Workflow">Feature Branch Workflow<a class="anchor-link" href="learning-git/#Feature-Branch-Workflow">¶</a>
 </h4>
-<h4 id="GitLab-Flow">GitLab Flow<a class="anchor-link" href="learning-git/#GitLab-Flow">¶</a>
+<h4 id="Forking-Workflow">Forking Workflow<a class="anchor-link" href="learning-git/#Forking-Workflow">¶</a>
+</h4>
+<h4 id="Git-Flow-Workflow">Git Flow Workflow<a class="anchor-link" href="learning-git/#Git-Flow-Workflow">¶</a>
+</h4>
+<h4 id="GitHub-Workflow">GitHub Workflow<a class="anchor-link" href="learning-git/#GitHub-Workflow">¶</a>
+</h4>
+<h4 id="GitLab-Workflow">GitLab Workflow<a class="anchor-link" href="learning-git/#GitLab-Workflow">¶</a>
+</h4>
+<h4 id="One-Workflow">One Workflow<a class="anchor-link" href="learning-git/#One-Workflow">¶</a>
 </h4>
 </div>
 </div>

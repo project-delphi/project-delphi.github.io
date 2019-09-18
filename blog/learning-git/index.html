@@ -142,20 +142,24 @@ navbar-dark bg-dark
 <p>A detached HEAD state is when a commit is navigated to without a branch. It is also possible to change the tip node of a branch by forcing a change.</p>
 <h3 id="Combining-Branches">Combining Branches<a class="anchor-link" href="#Combining-Branches">¶</a>
 </h3>
-<p><img src="../images/git.png" alt="Repo in Folder"></p>
+<p><img src="https://i.stack.imgur.com/nWYnQ.png" alt="Repo in Folder"></p>
+<p>To deeply understand combining branches, we need to understand the storage locations and data model of git. However, as a user - the API, given through commands, is often enough:</p>
 <p>There are three main ways to combine branches:</p>
 <ul>
-<li>pull (which is a fetch followed by a merge for a remote branch)</li>
 <li>merge </li>
 <li>rebase </li>
+<li>pull (which is a fetch followed by a merge for a remote branch)</li>
 </ul>
 <h4 id="Fetch">Fetch<a class="anchor-link" href="#Fetch">¶</a>
 </h4>
+<p>Remote repositories have local tracking branches when linked to a local repository. A fetch command updates the tracking branch to match the commits up to the tip of the remote repository's branch.</p>
 <h4 id="Merge">Merge<a class="anchor-link" href="#Merge">¶</a>
 </h4>
-<p>It is possible to create a new commit which combines two branches.</p>
+<p>It is possible to create a new commit which combines two branches. Merges happen when a commit is added to a branch that incorporates the tip commit of another branch. If there are conflicts, the git user has to choose how to fix those.</p>
+<p>Once the merge is completed, the merge commit is the leaf tip on the branch being merged into. Depending on the workflow the branch that was merged from can be deleted.</p>
 <h4 id="Pull">Pull<a class="anchor-link" href="#Pull">¶</a>
 </h4>
+<p>A pull is a fetch from remote repository branch, followed by a merge. If the merge fails, then the user is prompted to resolve the conflict or abort.</p>
 <h4 id="Rebase-And-Reset">Rebase And Reset<a class="anchor-link" href="#Rebase-And-Reset">¶</a>
 </h4>
 <h3 id="Commonly-Used-Git-Commands">Commonly Used Git Commands<a class="anchor-link" href="#Commonly-Used-Git-Commands">¶</a>
@@ -168,11 +172,19 @@ navbar-dark bg-dark
 </h3>
 <h3 id="WorkFlows">WorkFlows<a class="anchor-link" href="#WorkFlows">¶</a>
 </h3>
-<h4 id="Git-Flow">Git Flow<a class="anchor-link" href="#Git-Flow">¶</a>
+<h4 id="Centralized-Workflow">Centralized Workflow<a class="anchor-link" href="#Centralized-Workflow">¶</a>
 </h4>
-<h4 id="GitHub-Flow">GitHub Flow<a class="anchor-link" href="#GitHub-Flow">¶</a>
+<h4 id="Feature-Branch-Workflow">Feature Branch Workflow<a class="anchor-link" href="#Feature-Branch-Workflow">¶</a>
 </h4>
-<h4 id="GitLab-Flow">GitLab Flow<a class="anchor-link" href="#GitLab-Flow">¶</a>
+<h4 id="Forking-Workflow">Forking Workflow<a class="anchor-link" href="#Forking-Workflow">¶</a>
+</h4>
+<h4 id="Git-Flow-Workflow">Git Flow Workflow<a class="anchor-link" href="#Git-Flow-Workflow">¶</a>
+</h4>
+<h4 id="GitHub-Workflow">GitHub Workflow<a class="anchor-link" href="#GitHub-Workflow">¶</a>
+</h4>
+<h4 id="GitLab-Workflow">GitLab Workflow<a class="anchor-link" href="#GitLab-Workflow">¶</a>
+</h4>
+<h4 id="One-Workflow">One Workflow<a class="anchor-link" href="#One-Workflow">¶</a>
 </h4>
 </div>
 </div>
