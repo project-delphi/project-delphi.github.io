@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Thu, 19 Sep 2019 00:37:24 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Why Is Git So Hard To Understand?</title><link>https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Thu, 19 Sep 2019 00:41:36 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Why Is Git So Hard To Understand?</title><link>https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Why-is-Git-so-hard-to-understand?"&gt;Why is Git so hard to understand?&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/#Why-is-Git-so-hard-to-understand?"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I've been writing a series of posts on Git, with the aim of using them to train data scientists on some good practices in developing solutions that can be productionized - and increasing developer/data scientist velocity.&lt;/p&gt;
@@ -14,29 +14,42 @@
 &lt;h3 id="Naming-of-Commands"&gt;Naming of Commands&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/#Naming-of-Commands"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The naming of git commands is very different from other VCS systems and so can confuse users from other VCS systems.&lt;/p&gt;
 &lt;h3 id="Distributed-Version-Control"&gt;Distributed Version Control&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/#Distributed-Version-Control"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The distributed in git's DVCS is the major innovation vs other VCS systems.&lt;/p&gt;
 &lt;h3 id="Lack-of-Consistency-In-Command-Names"&gt;Lack of Consistency In Command Names&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/#Lack-of-Consistency-In-Command-Names"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;The git commands have irregular names and flags, so that the same semantic operations have different names. This parable from &lt;a href="https://www.quora.com/Why-is-Git-so-hard-to-learn"&gt;quora&lt;/a&gt; is quite telling:&lt;/p&gt;
-&lt;blockquote&gt;&lt;p&gt;A novice was learning at the feet of Master Git. At the end of the lesson he looked through his notes and said, “Master, I have a few questions. May I ask them?”
-Master Git nodded.
-“How can I view a list of all tags?”
-“git tag”, replied Master Git.
-“How can I view a list of all remotes?”
-“git remote -v”, replied Master Git.
-“How can I view a list of all branches?”
-“git branch -a”, replied Master Git.
-“And how can I view the current branch?”
-“git rev-parse --abbrev-ref HEAD”, replied Master Git.
-“How can I delete a remote?”
-“git remote rm”, replied Master Git.
-“And how can I delete a branch?”
-“git branch -d”, replied Master Git.
-The novice thought for a few moments, then asked: “Surely some of these could be made more consistent, so as to be easier to remember in the heat of coding?”
-Master Git snapped his fingers. A hobgoblin entered the room and ate the novice alive. In the afterlife, the novice was enlightened.&lt;/p&gt;
+&lt;blockquote&gt;&lt;p&gt;A novice was learning at the feet of Master Git. At the end of the lesson he looked through his notes and said, “Master, I have a few questions. May I ask them?”&lt;/p&gt;
+&lt;p&gt;Master Git nodded.&lt;/p&gt;
+&lt;p&gt;“How can I view a list of all tags?”&lt;/p&gt;
+&lt;p&gt;“git tag”, replied Master Git.&lt;/p&gt;
+&lt;p&gt;“How can I view a list of all remotes?”&lt;/p&gt;
+&lt;p&gt;“git remote -v”, replied Master Git.&lt;/p&gt;
+&lt;p&gt;“How can I view a list of all branches?”&lt;/p&gt;
+&lt;p&gt;“git branch -a”, replied Master Git.&lt;/p&gt;
+&lt;p&gt;“And how can I view the current branch?”&lt;/p&gt;
+&lt;p&gt;“git rev-parse --abbrev-ref HEAD”, replied Master Git.&lt;/p&gt;
+&lt;p&gt;“How can I delete a remote?”&lt;/p&gt;
+&lt;p&gt;“git remote rm”, replied Master Git.&lt;/p&gt;
+&lt;p&gt;“And how can I delete a branch?”&lt;/p&gt;
+&lt;p&gt;“git branch -d”, replied Master Git.&lt;/p&gt;
+&lt;p&gt;The novice thought for a few moments, then asked: “Surely some of these could be made more consistent, so as to be easier to remember in the heat of coding?”&lt;/p&gt;
+&lt;p&gt;Master Git snapped his fingers. A hobgoblin entered the room and ate the novice alive. In the afterlife, the novice was enlightened.&lt;/p&gt;
 &lt;/blockquote&gt;
 &lt;h3 id="Conclusion"&gt;Conclusion&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/#Conclusion"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Git is a genius piece of software. It is probably unnecessarily complicated and unwieldy, but given it's wide user base - we're stuck with it for some time to come. There are some efforts to produce a cleaner porcelain shell, such as &lt;a href="https://github.com/sdg-mit/gitless"&gt;gitless&lt;/a&gt; - they just haven't got enough traction for most organizations.&lt;/p&gt;
 &lt;p&gt;Seems like it's ripe for disruption.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/</guid><pubDate>Wed, 18 Sep 2019 23:56:10 GMT</pubDate></item><item><title>Directed Acyclic Graphs</title><link>https://project-delphi.github.io/blog/directed-acyclic-graphs/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing code_cell rendered"&gt;
+&lt;div class="input"&gt;
+&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
+&lt;div class="inner_cell"&gt;
+    &lt;div class="input_area"&gt;
+&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
+&lt;/pre&gt;&lt;/div&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/</guid><pubDate>Wed, 18 Sep 2019 23:56:10 GMT</pubDate></item><item><title>Directed Acyclic Graphs</title><link>https://project-delphi.github.io/blog/directed-acyclic-graphs/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;p&gt;Write your post here.&lt;/p&gt;
