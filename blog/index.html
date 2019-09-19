@@ -71,7 +71,92 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="directed-acyclic-graphs/" class="u-url">Directed Acyclic Graphs</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="why-is-git-so-hard-to-understand/" class="u-url">Why Is Git So Hard To Understand?</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Ravi Kalia
+            </span></p>
+            <p class="dateline">
+            <a href="why-is-git-so-hard-to-understand/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-09-18T19:56:10-04:00" itemprop="datePublished" title="2019-09-18">2019-09-18</time></a>
+            </p>
+                <p class="commentline">
+        
+    <a href="why-is-git-so-hard-to-understand/#disqus_thread" data-disqus-identifier="cache/posts/why-is-git-so-hard-to-understand.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Why-is-Git-so-hard-to-understand?">Why is Git so hard to understand?<a class="anchor-link" href="why-is-git-so-hard-to-understand/#Why-is-Git-so-hard-to-understand?">¶</a>
+</h2>
+<p>I've been writing a series of posts on Git, with the aim of using them to train data scientists on some good practices in developing solutions that can be productionized - and increasing developer/data scientist velocity.</p>
+<h3 id="Why-Git?">Why Git?<a class="anchor-link" href="why-is-git-so-hard-to-understand/#Why-Git?">¶</a>
+</h3>
+<p>Git is the standard DVCS tool for groups of software professionals collaborating. To build robust projects that can be iterated and ideated on, git is the de-facto standard. The git project was started by <a href="https://github.com/torvalds">Linus Torvalds</a> which helped its adoption.</p>
+<h3 id="What's-wrong-with-(G)it?">What's wrong with (G)it?<a class="anchor-link" href="why-is-git-so-hard-to-understand/#What's-wrong-with-(G)it?">¶</a>
+</h3>
+<p>With a little googling, I've found dozens of posts accepting that even seasoned developers can be puzzled by it's intricacies, it is widely recognized as difficult to use - <a href="https://spderosso.github.io/onward13.pdf">[1]</a>. Most users find some working patterns and rely on this to develop software - googling when things get out of hand, usually relying on <code>git reset --hard</code> and <code>git reflog</code> to get out.</p>
+<h3 id="Object-Model">Object Model<a class="anchor-link" href="why-is-git-so-hard-to-understand/#Object-Model">¶</a>
+</h3>
+<p>Git doesn't have a clean API with an object model. Git evolved somewhat organically as needs arose. Although some efforts were made to abstract out what was happening, it somehow got all mixed up.</p>
+<h3 id="Plumbing,-Porcelain-and-Poop">Plumbing, Porcelain and Poop<a class="anchor-link" href="why-is-git-so-hard-to-understand/#Plumbing,-Porcelain-and-Poop">¶</a>
+</h3>
+<p>The original idea had been there would be low-level commands (for developers of git) were not for users, and instead they would be given porcelain commands. Instead, as users became familiar and had various use cases, they dropped down into the low-level plumbing and the porcelain commands just didn't have enough expressive power. So now we have a poop-like situation where the ways to interact with git are so numerous and involved, that it's hard to keep a handle on.</p>
+<h3 id="Data-Structures">Data Structures<a class="anchor-link" href="why-is-git-so-hard-to-understand/#Data-Structures">¶</a>
+</h3>
+<p>Git makes use of, and inadvertently exposes several data structures - which are never thoroughly explained and often not needed for new users - adding to the mystique surrounding git.</p>
+<h4 id="The-Git-Graph-Model">The Git Graph Model<a class="anchor-link" href="why-is-git-so-hard-to-understand/#The-Git-Graph-Model">¶</a>
+</h4>
+<p>The git graph model is a great way to understand how branches, commits and navigation work. However it relates to other concepts such as working tree, branch name pointers, HEAD and branch tips - all of which need time to be understood.</p>
+<h3 id="Blobs">Blobs<a class="anchor-link" href="why-is-git-so-hard-to-understand/#Blobs">¶</a>
+</h3>
+<p>The Blobs are object stores that contain the contents of files. They are named using the contents of the file and a hashing algorithm.</p>
+<h3 id="SHAs">SHAs<a class="anchor-link" href="why-is-git-so-hard-to-understand/#SHAs">¶</a>
+</h3>
+<p>The hashing algorithm is applied to git commits and blobs contents. It's not widely used by users.</p>
+<h3 id="Naming-of-Commands">Naming of Commands<a class="anchor-link" href="why-is-git-so-hard-to-understand/#Naming-of-Commands">¶</a>
+</h3>
+<p>The naming of git commands is very different from other VCS systems and so can confuse users from other VCS systems.</p>
+<h3 id="Distributed-Version-Control">Distributed Version Control<a class="anchor-link" href="why-is-git-so-hard-to-understand/#Distributed-Version-Control">¶</a>
+</h3>
+<p>The distributed in git's DVCS is the major innovation vs other VCS systems.</p>
+<h3 id="Lack-of-Consistency-In-Command-Names">Lack of Consistency In Command Names<a class="anchor-link" href="why-is-git-so-hard-to-understand/#Lack-of-Consistency-In-Command-Names">¶</a>
+</h3>
+<p>The git commands have irregular names and flags, so that the same semantic operations have different names. This parable from <a href="https://www.quora.com/Why-is-Git-so-hard-to-learn">quora</a> is quite telling:</p>
+<blockquote>
+<p>A novice was learning at the feet of Master Git. At the end of the lesson he looked through his notes and said, “Master, I have a few questions. May I ask them?”
+Master Git nodded.
+“How can I view a list of all tags?”
+“git tag”, replied Master Git.
+“How can I view a list of all remotes?”
+“git remote -v”, replied Master Git.
+“How can I view a list of all branches?”
+“git branch -a”, replied Master Git.
+“And how can I view the current branch?”
+“git rev-parse --abbrev-ref HEAD”, replied Master Git.
+“How can I delete a remote?”
+“git remote rm”, replied Master Git.
+“And how can I delete a branch?”
+“git branch -d”, replied Master Git.
+The novice thought for a few moments, then asked: “Surely some of these could be made more consistent, so as to be easier to remember in the heat of coding?”
+Master Git snapped his fingers. A hobgoblin entered the room and ate the novice alive. In the afterlife, the novice was enlightened.</p>
+</blockquote>
+<h3 id="Conclusion">Conclusion<a class="anchor-link" href="why-is-git-so-hard-to-understand/#Conclusion">¶</a>
+</h3>
+<p>Git is a genius piece of software. It is probably unnecessarily complicated and unwieldy, but given it's wide user base - we're stuck with it for some time to come. There are some efforts to produce a cleaner porcelain shell, such as <a href="https://github.com/sdg-mit/gitless">gitless</a> - they just haven't got enough traction for most organizations.</p>
+<p>Seems like it's ripe for disruption.</p>
+
+</div>
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="directed-acyclic-graphs/" class="u-url">Directed Acyclic Graphs</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Ravi Kalia
