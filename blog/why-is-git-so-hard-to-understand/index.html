@@ -18,7 +18,7 @@
 <meta property="og:site_name" content="Ravi Kalia Blog">
 <meta property="og:title" content="Why Is Git So Hard To Understand?">
 <meta property="og:url" content="https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/">
-<meta property="og:description" content="Why is Git so hard to understand?¶I've been writing a series of posts on Git, with the aim of using them to train data scientists on some good practices in developing solutions that can be productioni">
+<meta property="og:description" content="Why is Git so hard to understand?¶I've been writing a series of posts on Git, with the aim of using them to train data scientists on good practices for robust solutions that can be productionized with">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2019-09-18T19:56:10-04:00">
 </head>
@@ -110,30 +110,30 @@ navbar-dark bg-dark
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Why-is-Git-so-hard-to-understand?">Why is Git so hard to understand?<a class="anchor-link" href="#Why-is-Git-so-hard-to-understand?">¶</a>
 </h2>
-<p>I've been writing a series of posts on Git, with the aim of using them to train data scientists on some good practices in developing solutions that can be productionized - and increasing developer/data scientist velocity.</p>
+<p>I've been writing a series of posts on Git, with the aim of using them to train data scientists on good practices for robust solutions that can be productionized with little effort; increasing developer/data scientist velocity.</p>
 <h3 id="Why-Git?">Why Git?<a class="anchor-link" href="#Why-Git?">¶</a>
 </h3>
-<p>Git is the standard DVCS tool for groups of software professionals collaborating. To build robust projects that can be iterated and ideated on, git is the de-facto standard. The git project was started by <a href="https://github.com/torvalds">Linus Torvalds</a> which helped its adoption.</p>
+<p>Git is the standard DVCS tool for groups of software professionals collaborating. To build robust projects that can be iterated and ideated on, git is the de-facto standard. It was initiated by <a href="https://github.com/torvalds">Linus Torvalds</a> which helped its adoption.</p>
 <h3 id="What's-wrong-with-(G)it?">What's wrong with (G)it?<a class="anchor-link" href="#What's-wrong-with-(G)it?">¶</a>
 </h3>
-<p>With a little googling, I've found dozens of posts accepting that even seasoned developers can be puzzled by it's intricacies, it is widely recognized as difficult to use - <a href="https://spderosso.github.io/onward13.pdf">[1]</a>. Most users find some working patterns and rely on this to develop software - googling when things get out of hand, usually relying on <code>git reset --hard</code> and <code>git reflog</code> to get out.</p>
-<h3 id="Object-Model">Object Model<a class="anchor-link" href="#Object-Model">¶</a>
+<p>With a little googling, I've found dozens of posts accepting that even seasoned developers can be puzzled by it's intricacies; git is widely recognized as difficult to use - <a href="https://spderosso.github.io/onward13.pdf">[1]</a>. Users find some working patterns and cling to them when developing - googling when things get out of hand, usually relying on <code>git reset --hard</code> and <code>git reflog</code> to get out of problems.</p>
+<h3 id="No-Object-Model">No Object Model<a class="anchor-link" href="#No-Object-Model">¶</a>
 </h3>
 <p>Git doesn't have a clean API with an object model. Git evolved somewhat organically as needs arose. Although some efforts were made to abstract out what was happening, it somehow got all mixed up.</p>
 <h3 id="Plumbing,-Porcelain-and-Poop">Plumbing, Porcelain and Poop<a class="anchor-link" href="#Plumbing,-Porcelain-and-Poop">¶</a>
 </h3>
-<p>The original idea had been there would be low-level commands (for developers of git) were not for users, and instead they would be given porcelain commands. Instead, as users became familiar and had various use cases, they dropped down into the low-level plumbing and the porcelain commands just didn't have enough expressive power. So now we have a poop-like situation where the ways to interact with git are so numerous and involved, that it's hard to keep a handle on.</p>
+<p>The original idea had been there would be low-level commands (for developers of git) were not for users, and instead they would use higher-level porcelain commands. Instead, as users became familiar and had various use cases, they dropped down into the low-level plumbing and the porcelain commands just didn't have enough expressive power. So now we have a poop-like (following plumbing and porcelain) situation where the ways to interact with git are so numerous and involved, that it's hard to keep a handle on.</p>
 <h3 id="Data-Structures">Data Structures<a class="anchor-link" href="#Data-Structures">¶</a>
 </h3>
-<p>Git makes use of, and inadvertently exposes several data structures - which are never thoroughly explained and often not needed for new users - adding to the mystique surrounding git.</p>
+<p>Git makes use of, and inadvertently exposes several data structures - which are never thoroughly explained and often not needed for new users - adding to the mystique surrounding it.</p>
 <h4 id="The-Git-Graph-Model">The Git Graph Model<a class="anchor-link" href="#The-Git-Graph-Model">¶</a>
 </h4>
 <p>The git graph model is a great way to understand how branches, commits and navigation work. However it relates to other concepts such as working tree, branch name pointers, HEAD and branch tips - all of which need time to be understood.</p>
-<h3 id="Blobs">Blobs<a class="anchor-link" href="#Blobs">¶</a>
-</h3>
+<h4 id="Blobs">Blobs<a class="anchor-link" href="#Blobs">¶</a>
+</h4>
 <p>The Blobs are object stores that contain the contents of files. They are named using the contents of the file and a hashing algorithm.</p>
-<h3 id="SHAs">SHAs<a class="anchor-link" href="#SHAs">¶</a>
-</h3>
+<h4 id="SHAs">SHAs<a class="anchor-link" href="#SHAs">¶</a>
+</h4>
 <p>The hashing algorithm is applied to git commits and blobs contents. It's not widely used by users.</p>
 <h3 id="Naming-of-Commands">Naming of Commands<a class="anchor-link" href="#Naming-of-Commands">¶</a>
 </h3>
