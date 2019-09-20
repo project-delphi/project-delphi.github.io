@@ -228,7 +228,7 @@ navbar-dark bg-dark
 <p>Classification is applicable to new instances of categorical data - data that belongs to one of several types (or classes). This is discrete data. The major types of classes are:</p>
 <ul>
 <li>binary</li>
-<li>mulitnomial</li>
+<li>multinomial</li>
 <li>ordinal</li>
 </ul>
 <p>When there are no features, we can work with categorical data:</p>
@@ -238,9 +238,10 @@ navbar-dark bg-dark
 <li>instantiate classifiers that make use of the distribution</li>
 <li>generate sample variates from the distribution</li>
 <li>make use of bar charts, pie charts and tables to specify the distribution</li>
-<li>produce ROC, AUC metrics and charts.</li>
+<li>produce ROC, AUC metrics and their charts for classifiers.</li>
 </ul>
-<p>If the data is a sample (usually the case), then the sample distribution is used as a proxy for the true distribution.</p>
+<p>If the data is a sample (usually the case), then the sample distribution is used as a proxy for the true distribution. The other useful strategy is use ensembling (such as bootstrap) to have a more robust (and less sticky to the data) estimate of the distribution.</p>
+<p>So let's roll these out using pandas, statsmodels, seaborn and sklearn.</p>
 
 </div>
 </div>
