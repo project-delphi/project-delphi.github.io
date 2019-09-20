@@ -19,7 +19,7 @@
 <meta property="og:site_name" content="Ravi Kalia Blog">
 <meta property="og:title" content="Featureless Machine Learning: Classification">
 <meta property="og:url" content="https://project-delphi.github.io/blog/featureless-machine-learning-classification/">
-<meta property="og:description" content="Classification Without Features¶Classification is applicable to new instances of categorical data - data that belongs to one of several types (or classes). This is discrete data. The major types of cl">
+<meta property="og:description" content="Classification Without Features¶Classification is applicable to new instances of categorical data - data that belongs to one of several types (or classes), the number of classes usually inferred from ">
 <meta property="og:type" content="article">
 <meta property="article:published_time" content="2019-09-17T20:28:45-04:00">
 </head>
@@ -111,11 +111,11 @@ navbar-dark bg-dark
 <div class="text_cell_render border-box-sizing rendered_html">
 <h2 id="Classification-Without-Features">Classification Without Features<a class="anchor-link" href="#Classification-Without-Features">¶</a>
 </h2>
-<p>Classification is applicable to new instances of categorical data - data that belongs to one of several types (or classes). This is discrete data. The major types of classes are:</p>
+<p>Classification is applicable to new instances of categorical data - data that belongs to one of several types (or classes), the number of classes usually inferred from the data. This is discrete data. The major types of classes are:</p>
 <ul>
-<li>binary</li>
-<li>multinomial</li>
-<li>ordinal</li>
+<li>binary (only two classes)</li>
+<li>multinomial (K classes with $K \geq 1$)</li>
+<li>ordinal (K classes with an ordering relation between them)</li>
 </ul>
 <p>When there are no features, we can work with categorical data:</p>
 <ul>
@@ -124,10 +124,11 @@ navbar-dark bg-dark
 <li>instantiate classifiers that make use of the distribution</li>
 <li>generate sample variates from the distribution</li>
 <li>make use of bar charts, pie charts and tables to specify the distribution</li>
-<li>produce ROC, AUC metrics and their charts for classifiers.</li>
+<li>produce ROC, AUC metrics and their charts for featureless classifiers.</li>
 </ul>
 <p>If the data is a sample (usually the case), then the sample distribution is used as a proxy for the true distribution. The other useful strategy is use ensembling (such as bootstrap) to have a more robust (and less sticky to the data) estimate of the distribution.</p>
-<p>So let's roll these out using pandas, statsmodels, seaborn and sklearn.</p>
+<p>If the number of classes, K is very large (&gt;15) - then interpreting charts becomes almost impossible - other than coarse proportions of the most frequent classes. The relativities don't come across well in charts or tables - so understanding is lost - unless the distribution is flat or dominated by a few classes; one might do well to aggregate the classes back up again.</p>
+<p>So let's roll these descriptions and predictions out using pandas, statsmodels, seaborn and sklearn.</p>
 
 </div>
 </div>
