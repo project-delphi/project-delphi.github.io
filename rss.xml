@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Fri, 20 Sep 2019 01:45:17 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Why Is Git So Hard To Understand?</title><link>https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Fri, 20 Sep 2019 02:13:00 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Why Is Git So Hard To Understand?</title><link>https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Why-is-Git-so-hard-to-understand?"&gt;Why is Git so hard to understand?&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/#Why-is-Git-so-hard-to-understand?"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src="https://miro.medium.com/max/1575/0*0Xfaz0bvLpRksBv5." alt=""&gt;&lt;/p&gt;
@@ -60,13 +60,22 @@
 &lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/directed-acyclic-graphs/</guid><pubDate>Wed, 18 Sep 2019 21:26:42 GMT</pubDate></item><item><title>Featureless Machine Learning: Classification</title><link>https://project-delphi.github.io/blog/featureless-machine-learning-classification/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Classification-Without-Features"&gt;Classification Without Features&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/featureless-machine-learning-classification/#Classification-Without-Features"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Classification is applicable to new instances of categorical data - data that belongs to one of several types (or classes). The major types of classes are:&lt;/p&gt;
+&lt;h2 id="Classification-Without-Features"&gt;Classification Without Features&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/featureless-machine-learning-classification/#Classification-Without-Features"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Classification is applicable to new instances of categorical data - data that belongs to one of several types (or classes). This is discrete data. The major types of classes are:&lt;/p&gt;
 &lt;ul&gt;
 &lt;li&gt;binary&lt;/li&gt;
 &lt;li&gt;mulitnomial&lt;/li&gt;
 &lt;li&gt;ordinal&lt;/li&gt;
 &lt;/ul&gt;
-&lt;p&gt;When there are no features, one can describe the distribution and build classifiers that make use of the distributional information.&lt;/p&gt;
+&lt;p&gt;When there are no features, we can work with categorical data:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;describe the data with the distribution over the classes&lt;/li&gt;
+&lt;li&gt;summarize the distribution with statistics&lt;/li&gt;
+&lt;li&gt;instantiate classifiers that make use of the distribution&lt;/li&gt;
+&lt;li&gt;generate sample variates from the distribution&lt;/li&gt;
+&lt;li&gt;make use of bar charts, pie charts and tables to specify the distribution&lt;/li&gt;
+&lt;li&gt;produce ROC, AUC metrics and charts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;If the data is a sample (usually the case), then the sample distribution is used as a proxy for the true distribution.&lt;/p&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
