@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Tue, 24 Sep 2019 20:46:16 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Jupyter Notebook vs HTML</title><link>https://project-delphi.github.io/blog/jupyter-notebook-vs-html/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;I recently found myself putting together a presentation for PyData. I was excited for the opportunity to use the rise extension for jupyter notebooks.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Thu, 26 Sep 2019 18:11:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>MLOps Teams vs Tools</title><link>https://project-delphi.github.io/blog/mlops-teams-vs-tools/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;Yesterday, I spoke at PyData Montreal. It was a lot of fun to discuss MLOps - particularly the parellels to DevOps advancement. &lt;/p&gt;
+&lt;p&gt;I spoke to an individual about a contradiction in my talk. I discussed the friction in taking data products to production.&lt;/p&gt;
+&lt;p&gt;I first talked about how building a team with:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Data Scientists (ML Researchers)&lt;/li&gt;
+&lt;li&gt;ML Engineers/Software Engineers&lt;/li&gt;
+&lt;li&gt;Deployment Specialists&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;is one way to scale product development. However I also noted the issue with ownership and understanding of the product can get muddled. Translating the product in intermediate steps can lose intention from product ideation to deployment.&lt;/p&gt;
+&lt;p&gt;I also ended with a quote:&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;People who write the models/algorithms should be the ones to implement them.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;So there's the contradiction.&lt;/p&gt;
+&lt;p&gt;After some thinking, it can be resolved as has been happening with software development - particularly web development. We need superbly easy-to-use tools that can be managed by a team of software/ml engineers who can continuously iterate in short cycles with automated guardrails.&lt;/p&gt;
+&lt;p&gt;Once that happens, individual members of teams will rotate between roles and get experience (possibly mastery) across the board in ML development.&lt;/p&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/mlops-teams-vs-tools/</guid><pubDate>Thu, 26 Sep 2019 17:47:04 GMT</pubDate></item><item><title>Jupyter Notebook vs HTML</title><link>https://project-delphi.github.io/blog/jupyter-notebook-vs-html/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;I recently found myself putting together a presentation for PyData. I was excited for the opportunity to use the rise extension for jupyter notebooks.&lt;/p&gt;
 &lt;p&gt;All seemed well until I decided to style using HTML (headers, cute icon, that kind of stuff) into some markdown cells.&lt;/p&gt;
 &lt;p&gt;Turns out that although markdown is a superset of HTML, jupyter markdown cells don't render html.&lt;/p&gt;
 &lt;p&gt;I also tried render in google sides and reveal.js - no joy.&lt;/p&gt;
@@ -245,49 +260,4 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/aiops-vs-mlops/</guid><pubDate>Mon, 16 Sep 2019 19:53:44 GMT</pubDate></item><item><title>Featureless Machine Learning</title><link>https://project-delphi.github.io/blog/featureless-machine-learning/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Featureless-Machine-Learning"&gt;Featureless Machine Learning&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/featureless-machine-learning/#Featureless-Machine-Learning"&gt;¶&lt;/a&gt;&lt;/h2&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;p&gt;Often it helps to refresh grounding in the fundamentals. I'm writing a sequence of posts to touch base with some machine learning/stats techniques - but without features.&lt;/p&gt;
-&lt;p&gt;Without features, we are forced to focus on the learning task with just univariate data. This give context to charts and often flattens the cute maths that we can spend too much time on.&lt;/p&gt;
-&lt;p&gt;In the major cultural split of prediction and causation - there really isn't much causation without features - that's the whole point of causation to link some subset of features to an outcome or target - &lt;a href="https://arxiv.org/pdf/1101.0891.pdf"&gt;[1]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;One other reason to do this, is that when features are held constant at some level - say for some kind of causality analysis - we can still look at the univariate variable of interest.&lt;/p&gt;
-&lt;p&gt;Let's break our foray into featureless machine learning using the standard groupings for ML algorithms. That is:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Supervised Learning&lt;ul&gt;
-&lt;li&gt;Classification&lt;/li&gt;
-&lt;li&gt;Regression&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;li&gt;Unsupervised Learning &lt;ul&gt;
-&lt;li&gt;Data Reduction&lt;/li&gt;
-&lt;li&gt;Clustering&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When there are no features, these groupings are referenced by other names - such as density estimation or mixture of distributions. We'll break these into separate posts focused on each group of problems.&lt;/p&gt;
-&lt;p&gt;(We won't dwell on reinforcement learning, since I don't have enough exposure to the area to discuss it.)&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/featureless-machine-learning/</guid><pubDate>Mon, 16 Sep 2019 18:38:54 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/aiops-vs-mlops/</guid><pubDate>Mon, 16 Sep 2019 19:53:44 GMT</pubDate></item></channel></rss>
