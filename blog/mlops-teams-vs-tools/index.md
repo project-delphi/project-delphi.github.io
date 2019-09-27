@@ -9,7 +9,7 @@
 .. type: text
 -->
 
-Yesterday, I spoke at PyData Montreal. It was a lot of fun to discuss MLOps - particularly the parellels to DevOps advancement. 
+Yesterday, I spoke at PyData Montreal. It was a lot of fun to discuss MLOps - particularly the parallels to DevOps advancement. 
 
 I spoke to an individual about a contradiction in my talk. I discussed the friction in taking data products to production.
 
