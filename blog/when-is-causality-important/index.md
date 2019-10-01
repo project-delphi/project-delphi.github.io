@@ -37,7 +37,7 @@ It depends on the context as to what cost is unbearable (reputation, dollar amou
 
 This might be referred to as an asset allocation strategy in some fields of study.
 
-![](https://imgflip.com/i/3c0r72)
+![](https://imgflip.com/i/3c0wbp)
 
 One is usually looking for the best way to distribute resources based on causal inference. By estimating the counterfactual - the distribution of not applying a treatment (manipulating features) -  to optimize the target of future examples - probablistically, since deterministic targets seldom occur in business or nature.
 
