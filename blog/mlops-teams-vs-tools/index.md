@@ -17,7 +17,7 @@ I spoke to an individual about a contradiction in my talk. I discussed the frict
 
 I first talked about how building a team with:
 
-* Data Scientists (ML Researchers)
+* Data Scientists/ML Researchers
 * ML Engineers/Software Engineers
 * Deployment Specialists
 
@@ -27,14 +27,19 @@ I also ended with a quote:
 
 > People who write the models/algorithms should be the ones to implement them.
 
-So there's the contradiction.
+So there's the contradiction. How can one person have all these skills and qualities. Well plainly, they can't.
 
 ![](https://miro.medium.com/max/550/1*A_uvkhhEuvh1Jj_rDy1DYA.jpeg)
 
-After some thinking, it can be resolved as has been happening with software development - particularly web development. We need superbly easy-to-use tools that can be managed by a team of software/ml engineers who can continuously iterate in short cycles with automated guardrails.
+After some thinking, this conflict can be resolved as has been happening with software development - particularly web development. We need *easy-to-use tools* in an integrated workflow that can be managed by a team of software/ml engineers who can continuously iterate in short cycles with *automated guardrails*. With the right workflow, it should become very difficult if not impossible to deploy failing ML code. Then we just need extremely focussed short cycles of development.
 
 Once that happens, individual members of teams will rotate between roles and get experience (possibly mastery) across the board in ML development.
 
-So using tools a ML developer can be augmented - much like Iron Man with his suit.
+So using easy to use performant tools an ML developer can be augmented - much like Iron Man with his suit.
 
 ![](http://www.memesboy.com/wp-content/uploads/2018/08/Perhaps-But-Im-Also-Iron-Man-Meme.jpg)
+
+
+Let's remember that not all web developers have embraced Agile CI/CD. In the same way, not all ML deployment will be following such a model. However, it should become increasingly uncommon to see long brittle development cycles.
+
+Developer. Velocity. Matters.

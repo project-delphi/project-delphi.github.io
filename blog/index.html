@@ -72,7 +72,51 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="mlops-teams-vs-tools/" class="u-url">MLOps Teams or Tools</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="when-is-causality-important/" class="u-url">When Is Causality Important</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Ravi Kalia
+            </span></p>
+            <p class="dateline">
+            <a href="when-is-causality-important/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-09-29T16:34:44-04:00" itemprop="datePublished" title="2019-09-29">2019-09-29</time></a>
+            </p>
+                <p class="commentline">
+        
+    <a href="when-is-causality-important/#disqus_thread" data-disqus-identifier="cache/posts/when-is-causality-important.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>A data scientist works on three types of problems:</p>
+<ol>
+<li>Prediction</li>
+<li>Description</li>
+<li>Causality</li>
+</ol>
+<p>I've been thinking of when it is that causality is important. The reason is for quite sometime I didn't put much thought into the area - it is messy. I had been sold on the statistical perspective that correlation is not causation, only controlled randomized experiments with enough confounders could determine causality <a href="https://arxiv.org/abs/1804.10846">[1]</a>.</p>
+<p>Instead, I focussed on prediction - using regularization to press down on correlated (and possibly causal) features and weights so that deciding to leave features in or out didn't really matter. This strategy has worked combined with robustness techniques (such as bootstrap ensembling or randomized dropout) across many applications using learning algorithms.</p>
+<p><img alt="" src="https://i.imgflip.com/223wf5.jpg"></p>
+<p>Regularizing is as if the features are flattened so that only the most essential are allowed to affect the outcome - like a flattened statue.</p>
+<p>This prediction focus matters when there is observational data and the objective is to query a model and return a "best" prediction on a target.</p>
+<h3>When does causality matter to an organization?</h3>
+<p>Well it seems that it matters when the features can be manipulated. This is also referred to as applying treatments, having controls and considering regimes.</p>
+<p>More importantly, if these features have high cost (such as appliance choice in a cloud server or deployment of physical/financial resources) then it makes sense to focus on causality. This might be referred to as an asset allocation strategy in some fields.</p>
+<p><img alt="" src="https://imgflip.com/i/3c0r72"></p>
+<p>One is usually looking for the best way to distribute resources based on causal inference. By estimating the counterfactual - the distribution of not applying a treatment (manipulating features) -  to optimize the target of future examples - probablistically, since deterministic targets seldom occur in business or nature.</p>
+<p>This is only possible because we make assumptions on the kind of relationship that might hold going from a controlled feature vs a treatment feature to the target. There are three schools making different assumptions:</p>
+<ol>
+<li>Statistics using Propensity Matching</li>
+<li>Computer Science using Structural Equation DAGs</li>
+<li>Econometrics using Instrument Variables</li>
+</ol>
+<p>The group of assumptions made affect the probability distribution of the target and hence the decisions made. This in part is why causal reasoning does not have clean well understood modelling approaches, unlike prediction.</p>
+<p>Different. Assumptions. Generate. Different. Distributions.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="mlops-teams-vs-tools/" class="u-url">MLOps Teams or Tools</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Ravi Kalia
@@ -95,7 +139,7 @@ navbar-dark bg-dark
 <p><img alt="" src="https://i2.wp.com/www.developermemes.com/wp-content/uploads/2013/12/Worked-Fine-In-Dev-Ops-Problem-Now.jpg?fit=400%2C299"></p>
 <p>I first talked about how building a team with:</p>
 <ul>
-<li>Data Scientists (ML Researchers)</li>
+<li>Data Scientists/ML Researchers</li>
 <li>ML Engineers/Software Engineers</li>
 <li>Deployment Specialists</li>
 </ul>
@@ -104,12 +148,14 @@ navbar-dark bg-dark
 <blockquote>
 <p>People who write the models/algorithms should be the ones to implement them.</p>
 </blockquote>
-<p>So there's the contradiction.</p>
+<p>So there's the contradiction. How can one person have all these skills and qualities. Well plainly, they can't.</p>
 <p><img alt="" src="https://miro.medium.com/max/550/1*A_uvkhhEuvh1Jj_rDy1DYA.jpeg"></p>
-<p>After some thinking, it can be resolved as has been happening with software development - particularly web development. We need superbly easy-to-use tools that can be managed by a team of software/ml engineers who can continuously iterate in short cycles with automated guardrails.</p>
+<p>After some thinking, this conflict can be resolved as has been happening with software development - particularly web development. We need <em>easy-to-use tools</em> in an integrated workflow that can be managed by a team of software/ml engineers who can continuously iterate in short cycles with <em>automated guardrails</em>. With the right workflow, it should become very difficult if not impossible to deploy failing ML code. Then we just need extremely focussed short cycles of development.</p>
 <p>Once that happens, individual members of teams will rotate between roles and get experience (possibly mastery) across the board in ML development.</p>
-<p>So using tools a ML developer can be augmented - much like Iron Man with his suit.</p>
+<p>So using easy to use performant tools an ML developer can be augmented - much like Iron Man with his suit.</p>
 <p><img alt="" src="http://www.memesboy.com/wp-content/uploads/2018/08/Perhaps-But-Im-Also-Iron-Man-Meme.jpg"></p>
+<p>Let's remember that not all web developers have embraced Agile CI/CD. In the same way, not all ML deployment will be following such a model. However, it should become increasingly uncommon to see long brittle development cycles.</p>
+<p>Developer. Velocity. Matters.</p>
 </div>
     </div>
     </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="jupyter-notebook-vs-html/" class="u-url">Jupyter Notebook vs HTML</a></h1>
@@ -581,62 +627,6 @@ navbar-dark bg-dark
 </h4>
 <h4 id="One-Workflow">One Workflow<a class="anchor-link" href="learning-git/#One-Workflow">¶</a>
 </h4>
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="aiops-vs-mlops/" class="u-url">AIOps vs MLOps</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Ravi Kalia
-            </span></p>
-            <p class="dateline">
-            <a href="aiops-vs-mlops/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-09-16T15:53:44-04:00" itemprop="datePublished" title="2019-09-16">2019-09-16</time></a>
-            </p>
-                <p class="commentline">
-        
-    <a href="aiops-vs-mlops/#disqus_thread" data-disqus-identifier="cache/posts/aiops-vs-mlops.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="AIOps-vs-MLOps">AIOps vs MLOps<a class="anchor-link" href="aiops-vs-mlops/#AIOps-vs-MLOps">¶</a>
-</h2>
-<p>I'm going to be speaking on MLOps soon. I also came across the term <em>AIOps</em> in my preparation. Initially I had thought it was just a buzzy synonym for MLOps. However, after investigating some more, it seems at least some organizations differentiate between the two.</p>
-<h3 id="MLOps">MLOps<a class="anchor-link" href="aiops-vs-mlops/#MLOps">¶</a>
-</h3>
-<p>MLOps is the process of taking a ML solution and bringing it to production. It needs a culture and tools that connect concerns in ML systems development with concerns in ML systems operations - <a href="https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf">[1]</a>. This touches on a number of themes such as CI/CD, data reliability, monitoring, scaling, decoupling, and fast deployment to production, avoiding fragile systems.</p>
-<h3 id="AIOps">AIOps<a class="anchor-link" href="aiops-vs-mlops/#AIOps">¶</a>
-</h3>
-<p>Ops, or Operations - already went through a revolution known as DevOps - where changes and deployment became something that an application developer can do by using cloud services and orchestration software.</p>
-<p>AIOps is about bringing machine learning techniques to solve Ops problems such as reliability, monitoring, capacity management, service desks and even more automation than natively available through DevOps - <a href="https://www.lakesidesoftware.com/blog/guide-aiops-tools-2019-how-choose-key-concepts">[2]</a>.</p>
-<h3 id="Causality">Causality<a class="anchor-link" href="aiops-vs-mlops/#Causality">¶</a>
-</h3>
-<p>One interesting aspect of AIOps is that causality is very important to many of the problems in the space. That is knowing the cause of problems and possible solutions is as important as predicting problems such as failure.</p>
-<p>In many traditionally ML algorithms, causality is not the focus and it is left to the realm of statistics to identify which features cause changes in the target - <a href="http://w3.mi.parisdescartes.fr/~chambaz/Atelier209/07vanderLaan.pdf">[3]</a>.</p>
-
 </div>
 </div>
 </div>
