@@ -29,7 +29,13 @@ This prediction focus matters when there is observational data and the objective
 
 Well it seems that it matters when the features can be manipulated. This is also referred to as applying treatments, having controls and considering regimes.
 
-More importantly, if these features have high cost (such as appliance choice in a cloud server or deployment of physical/financial resources) then it makes sense to focus on causality. This might be referred to as an asset allocation strategy in some fields.
+More importantly, if these features have high cost (such as appliance choice in a cloud server or deployment of physical/financial resources) then it makes sense to focus on causality.
+
+![](http://www.kappit.com/img/pics/201602_1229_ihdaf_sm.jpg)
+
+It depends on the context as to what cost is unbearable (reputation, dollar amount, ethical concerns) so that manipulating features becomes desirable.
+
+This might be referred to as an asset allocation strategy in some fields of study.
 
 ![](https://imgflip.com/i/3c0r72)
 
