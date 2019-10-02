@@ -21,9 +21,9 @@ Instead, I focussed on prediction - using regularization to press down on correl
 
 ![](https://i.imgflip.com/223wf5.jpg)
 
-Regularizing is as if the features are flattened so that only the most essential are allowed to affect the outcome - like a flattened statue.
+Regularizing is as if the ~~features~~ weights on features are flattened so that only the most essential and truly impactful are allowed to affect the outcome - like a flattened statue, the essence can still be determined.
 
-This prediction focus matters when there is observational data and the objective is to query a model and return a "best" prediction on a target.
+This prediction focus matters when there is observational data and the objective is to query a model and return a "best" prediction on a target. Indeed, much of the billions in Machine Learning have been spent on getting prediction right.
 
 ## When does causality matter to an organization? 
 

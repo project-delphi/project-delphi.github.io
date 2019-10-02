@@ -118,8 +118,8 @@ navbar-dark bg-dark
 <p>I've been thinking of when it is that causality is important. The reason is for quite sometime I didn't put much thought into the area - it is messy. I had been sold on the statistical perspective that correlation is not causation, only controlled randomized experiments with enough confounders could determine causality <a href="https://arxiv.org/abs/1804.10846">[1]</a>.</p>
 <p>Instead, I focussed on prediction - using regularization to press down on correlated (and possibly causal) features and weights so that deciding to leave features in or out didn't really matter. This strategy has worked combined with robustness techniques (such as bootstrap ensembling or randomized dropout) across many applications using learning algorithms.</p>
 <p><img alt="" src="https://i.imgflip.com/223wf5.jpg"></p>
-<p>Regularizing is as if the features are flattened so that only the most essential are allowed to affect the outcome - like a flattened statue.</p>
-<p>This prediction focus matters when there is observational data and the objective is to query a model and return a "best" prediction on a target.</p>
+<p>Regularizing is as if the <del>features</del> weights on features are flattened so that only the most essential and truly impactful are allowed to affect the outcome - like a flattened statue, the essence can still be determined.</p>
+<p>This prediction focus matters when there is observational data and the objective is to query a model and return a "best" prediction on a target. Indeed, much of the billions in Machine Learning have been spent on getting prediction right.</p>
 <h3>When does causality matter to an organization?</h3>
 <p>Well it seems that it matters when the features can be manipulated. This is also referred to as applying treatments, having controls and considering regimes.</p>
 <p>More importantly, if these features have high cost (such as appliance choice in a cloud server or deployment of physical/financial resources) then it makes sense to focus on causality.</p>
