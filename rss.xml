@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Wed, 02 Oct 2019 02:44:44 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>When Is Causality Important</title><link>https://project-delphi.github.io/blog/when-is-causality-important/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;A data scientist works on three types of problems:&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Wed, 02 Oct 2019 03:27:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>When Is Causality Important</title><link>https://project-delphi.github.io/blog/when-is-causality-important/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;A data scientist works on three types of problems:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Prediction&lt;/li&gt;
 &lt;li&gt;Description&lt;/li&gt;
@@ -50,8 +50,8 @@
 &lt;p&gt;All seemed well until I decided to style using html (Headers, cute icon, that kind of stuff) into some markdown cells.&lt;/p&gt;
 &lt;p&gt;Turns out that although markdown is a superset of html, jupyter markdown cells don't render html.&lt;/p&gt;
 &lt;p&gt;I also tried render in google sides and reveal.js - no joy.&lt;/p&gt;
-&lt;p&gt;In the end, I found an even more convoluted solution. I made all my slides as styled html pages. Then I took screenshots (yes screenshots!) and embedded screenshot images into markdown cells marked as slides with rise. &lt;/p&gt;
-&lt;p&gt;This has to be an exmaple of glue code!&lt;/p&gt;
+&lt;p&gt;In the end, I found an even more convoluted solution. I made all my slides as styled html pages. Then I took screenshots (yes screenshots!) and embedded screenshot images into markdown cells marked as slides with rise.&lt;/p&gt;
+&lt;p&gt;This has to be an example of glue code!&lt;/p&gt;
 &lt;p&gt;Painful. Experience.&lt;/p&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/jupyter-notebook-vs-html/</guid><pubDate>Tue, 24 Sep 2019 18:18:47 GMT</pubDate></item><item><title>Why Is Git So Hard To Understand?</title><link>https://project-delphi.github.io/blog/why-is-git-so-hard-to-understand/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
