@@ -17,8 +17,8 @@ Turns out that although markdown is a superset of html, jupyter markdown cells d
 
 I also tried render in google sides and reveal.js - no joy.
 
-In the end, I found an even more convoluted solution. I made all my slides as styled html pages. Then I took screenshots (yes screenshots!) and embedded screenshot images into markdown cells marked as slides with rise. 
+In the end, I found an even more convoluted solution. I made all my slides as styled html pages. Then I took screenshots (yes screenshots!) and embedded screenshot images into markdown cells marked as slides with rise.
 
-This has to be an exmaple of glue code!
+This has to be an example of glue code!
 
 Painful. Experience.

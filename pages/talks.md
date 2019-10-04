@@ -10,6 +10,10 @@
 .. type: text
 -->
 
+#### September 2019 PyData Montreal
+
+**Invited Speaker: ML in Production**
+
 #### Aug 2019   Software Crafters Montreal
 
 **Lightning Talk: [Machine Learning Supervising TDD](https://medium.com/@ravikalia/machine-learning-supervising-tdd-ad46ab3a0e8c)**
@@ -40,4 +44,4 @@
 
 ####  2012   Queen's University, Ontario, Department of Mathematics and Statistics
 
- **Invited Speaker: Markov Decision Process**
+ **Invited Speaker: Markov Decision Processes**
