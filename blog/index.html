@@ -72,7 +72,32 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="when-is-causality-important/" class="u-url">When Is Causality Important</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="code-fragments-on-wikipedia/" class="u-url">Code Fragments On Wikipedia</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Ravi Kalia
+            </span></p>
+            <p class="dateline">
+            <a href="code-fragments-on-wikipedia/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-10-04T10:49:16-04:00" itemprop="datePublished" title="2019-10-04">2019-10-04</time></a>
+            </p>
+                <p class="commentline">
+        
+    <a href="code-fragments-on-wikipedia/#disqus_thread" data-disqus-identifier="cache/posts/code-fragments-on-wikipedia.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<p>After I spoke at PyData Montreal about maintaining code quality in data science/machine learning - I showed a cleaned up PageRank on <a href="https://en.wikipedia.org/wiki/PageRank">Wikipedia</a>.</p>
+<p>It got me thinking. There really should be code guidelines and a major clean up effort in the wikipedia sections for Machine Learning/Statistics.</p>
+<p>Something like a guidelines document for the major languages would be great. In addition, an effort to clean up code fragments on say the first 100, then next 400 articles in Machine Learning - that's important.</p>
+<p>Why do this? Wikipedia is a resource for the whole world. THe more people that are exposed to good coding guidelines, the healthier our community will be.</p>
+<p>Community. Matters.</p>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="when-is-causality-important/" class="u-url">When Is Causality Important</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Ravi Kalia
@@ -511,124 +536,6 @@ navbar-dark bg-dark
 <p>Graphs seem to be occurring with increasing regularity. Their use to solve problems will be fascinating.</p>
 <p>Watch. This. Space.</p>
 
-</div>
-</div>
-</div>
-<div class="cell border-box-sizing code_cell rendered">
-<div class="input">
-<div class="prompt input_prompt">In [ ]:</div>
-<div class="inner_cell">
-    <div class="input_area">
-<div class=" highlight hl-ipython3"><pre><span></span> 
-</pre></div>
-
-    </div>
-</div>
-</div>
-
-</div>
-</div>
-    </div>
-    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="learning-git/" class="u-url">Learning Git</a></h1>
-        <div class="metadata">
-            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
-                Ravi Kalia
-            </span></p>
-            <p class="dateline">
-            <a href="learning-git/" rel="bookmark">
-            <time class="published dt-published" datetime="2019-09-16T17:16:03-04:00" itemprop="datePublished" title="2019-09-16">2019-09-16</time></a>
-            </p>
-                <p class="commentline">
-        
-    <a href="learning-git/#disqus_thread" data-disqus-identifier="cache/posts/learning-git.html">Comments</a>
-
-
-        </p>
-</div>
-    </header><div class="e-content entry-content">
-    <div>
-<div class="cell border-box-sizing text_cell rendered">
-<div class="prompt input_prompt">
-</div>
-<div class="inner_cell">
-<div class="text_cell_render border-box-sizing rendered_html">
-<h2 id="Learning-Git">Learning Git<a class="anchor-link" href="learning-git/#Learning-Git">¶</a>
-</h2>
-<p><img src="https://cdn-images-1.medium.com/max/2000/1*0o9GZUzXiNnI4poEvxvy8g.png#center" alt=""></p>
-<p>I was recently asked how I would introduce git to new data scientists.</p>
-<p>It's been so long since I was a noob to it, and really only picking up commands and understanding them as needed - that I decided to think it through from basics. Below are some broad steps, I'll try and write posts with links to resources on each of these.</p>
-<p>A key part of understanding Git is that there are multiple interpretations on what is happening when using git - <a href="http://www2.math.uu.se/~thulin/mm/breiman.pdf">[1]</a>, the so called Rashomon effect. Also bear in mind that:</p>
-<ul>
-<li>a repository is a container, a hidden folder and sometimes referred to as the commit tree</li>
-<li>there are many effective workflows for using git</li>
-<li>there are multiple ways to achieve a desired outcome</li>
-<li>several features of git that aren't explicitly related to one another</li>
-<li>only some features are needed for certain workflows</li>
-<li>some workflows rely on features (such as pull requests) that are not available in git, but through hosting services such as github and bitbucket</li>
-<li>the git API has ~200 commands that act on the git repository object, about 40 of those commands are needed for 99% of use cases.</li>
-<li>(~15 of those 40 commands have 4/5 regularly used flag options.)</li>
-</ul>
-<p>Perhaps the best description of git is "it's a type of version control system for a project with features that enable collaboration between individual contributors" - <a href="https://www.atlassian.com/git">[2]</a>.</p>
-<p>In the end, the best way to operate git is to just use it.</p>
-<h3 id="A-Version-Control-System">A Version Control System<a class="anchor-link" href="learning-git/#A-Version-Control-System">¶</a>
-</h3>
-<p>A version control system (VCS) on a project allows making checkpoints, recording the state of the project - files and sub-folders, as it evolves over time. These checkpoints are recorded to a store using the difference between the current state and the previous checkpoint. Any VCS has methods to navigate to different states of the checkpoints. When called to a certain checkpoint, these methods change the repository container (files and sub-folders) to the state of the checkpoint.</p>
-<p>Git is a type of VCS - it records checkpoints as commits and allows navigating them. These checkpoint commits point back to earlier commits, until the root commit, which is the first checkpoint. Therefore a sequence of commits forms a data structure that is a tree - a special kind of mathematical graph, often referred to as as the repository. Hence a commit has only one parent - another commit, unless a merge is being made.</p>
-<p>To make a checkpoint, the incantation is a two-step procedure. First, files are marked as in a staging area. Second, once there is a coherent small piece of work in the staging area, this unit of work is checkpointed as a commit to the repository. The idea is that staging allows forming commits as a set of changes to a number of specific files, as opposed to changes that may not be relevant. In practice, many find that staging is an extra step - all files modified/created since a commit are committed to the next commit.</p>
-<p>Nonetheless, in addition to navigating commits, some methods are needed to add, remove files to the staging area. In addition sometimes a block of changes can be stashed to a local store so that navigating commits can still be allowed.</p>
-<h3 id="The-Repository-Is-a-Commit-Graph">The Repository Is a Commit Graph<a class="anchor-link" href="learning-git/#The-Repository-Is-a-Commit-Graph">¶</a>
-</h3>
-<p>As mentioned, these commits form a graph in the repository. The commits are Nodes and they point to parent commits. Navigating to a commit changes the repository to the state of the previous commit.</p>
-<h3 id="Branches:-Pointers-To-Nodes">Branches: Pointers To Nodes<a class="anchor-link" href="learning-git/#Branches:-Pointers-To-Nodes">¶</a>
-</h3>
-<p>A branch is just a moveable pointer to a particular leaf tip Node on the commit tree. When on a branch, the HEAD (reference to a commit) is automatically changed if a new commit is made.</p>
-<p>A detached HEAD state is when a commit is navigated to without a branch. It is also possible to change the tip node of a branch by forcing a change.</p>
-<h3 id="Combining-Branches">Combining Branches<a class="anchor-link" href="learning-git/#Combining-Branches">¶</a>
-</h3>
-<p><img src="https://i.stack.imgur.com/nWYnQ.png" alt="Repo in Folder"></p>
-<p>To deeply understand combining branches, we need to understand the storage locations and data model of git. However, as a user - the API, given through commands, is often enough:</p>
-<p>There are three main ways to combine branches:</p>
-<ul>
-<li>merge </li>
-<li>rebase </li>
-<li>pull (which is a fetch followed by a merge for a remote branch)</li>
-</ul>
-<h4 id="Fetch">Fetch<a class="anchor-link" href="learning-git/#Fetch">¶</a>
-</h4>
-<p>Remote repositories have local tracking branches when linked to a local repository. A fetch command updates the tracking branch to match the commits up to the tip of the remote repository's branch.</p>
-<h4 id="Merge">Merge<a class="anchor-link" href="learning-git/#Merge">¶</a>
-</h4>
-<p>It is possible to create a new commit which combines two branches. Merges happen when a commit is added to a branch that incorporates the tip commit of another branch. If there are conflicts, the git user has to choose how to fix those.</p>
-<p>Once the merge is completed, the merge commit is the leaf tip on the branch being merged into. Depending on the workflow the branch that was merged from can be deleted.</p>
-<h4 id="Pull">Pull<a class="anchor-link" href="learning-git/#Pull">¶</a>
-</h4>
-<p>A pull is a fetch from remote repository branch, followed by a merge. If the merge fails, then the user is prompted to resolve the conflict or abort.</p>
-<h4 id="Rebase-And-Reset">Rebase And Reset<a class="anchor-link" href="learning-git/#Rebase-And-Reset">¶</a>
-</h4>
-<h3 id="Commonly-Used-Git-Commands">Commonly Used Git Commands<a class="anchor-link" href="learning-git/#Commonly-Used-Git-Commands">¶</a>
-</h3>
-<h3 id="Remote-Repository">Remote Repository<a class="anchor-link" href="learning-git/#Remote-Repository">¶</a>
-</h3>
-<h3 id="Remote-Branches">Remote Branches<a class="anchor-link" href="learning-git/#Remote-Branches">¶</a>
-</h3>
-<h3 id="Collaborative-Git:-GitHub">Collaborative Git: GitHub<a class="anchor-link" href="learning-git/#Collaborative-Git:-GitHub">¶</a>
-</h3>
-<h3 id="WorkFlows">WorkFlows<a class="anchor-link" href="learning-git/#WorkFlows">¶</a>
-</h3>
-<h4 id="Centralized-Workflow">Centralized Workflow<a class="anchor-link" href="learning-git/#Centralized-Workflow">¶</a>
-</h4>
-<h4 id="Feature-Branch-Workflow">Feature Branch Workflow<a class="anchor-link" href="learning-git/#Feature-Branch-Workflow">¶</a>
-</h4>
-<h4 id="Forking-Workflow">Forking Workflow<a class="anchor-link" href="learning-git/#Forking-Workflow">¶</a>
-</h4>
-<h4 id="Git-Flow-Workflow">Git Flow Workflow<a class="anchor-link" href="learning-git/#Git-Flow-Workflow">¶</a>
-</h4>
-<h4 id="GitHub-Workflow">GitHub Workflow<a class="anchor-link" href="learning-git/#GitHub-Workflow">¶</a>
-</h4>
-<h4 id="GitLab-Workflow">GitLab Workflow<a class="anchor-link" href="learning-git/#GitLab-Workflow">¶</a>
-</h4>
-<h4 id="One-Workflow">One Workflow<a class="anchor-link" href="learning-git/#One-Workflow">¶</a>
-</h4>
 </div>
 </div>
 </div>

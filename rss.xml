@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Wed, 02 Oct 2019 03:27:56 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>When Is Causality Important</title><link>https://project-delphi.github.io/blog/when-is-causality-important/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;A data scientist works on three types of problems:&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Fri, 04 Oct 2019 15:17:51 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Code Fragments On Wikipedia</title><link>https://project-delphi.github.io/blog/code-fragments-on-wikipedia/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;After I spoke at PyData Montreal about maintaining code quality in data science/machine learning - I showed a cleaned up PageRank on &lt;a href="https://en.wikipedia.org/wiki/PageRank"&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It got me thinking. There really should be code guidelines and a major clean up effort in the wikipedia sections for Machine Learning/Statistics.&lt;/p&gt;
+&lt;p&gt;Something like a guidelines document for the major languages would be great. In addition, an effort to clean up code fragments on say the first 100, then next 400 articles in Machine Learning - that's important.&lt;/p&gt;
+&lt;p&gt;Why do this? Wikipedia is a resource for the whole world. THe more people that are exposed to good coding guidelines, the healthier our community will be.&lt;/p&gt;
+&lt;p&gt;Community. Matters.&lt;/p&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/code-fragments-on-wikipedia/</guid><pubDate>Fri, 04 Oct 2019 14:49:16 GMT</pubDate></item><item><title>When Is Causality Important</title><link>https://project-delphi.github.io/blog/when-is-causality-important/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;A data scientist works on three types of problems:&lt;/p&gt;
 &lt;ol&gt;
 &lt;li&gt;Prediction&lt;/li&gt;
 &lt;li&gt;Description&lt;/li&gt;
@@ -212,58 +216,4 @@
 &lt;/div&gt;
 &lt;/div&gt;
 
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/graphs-graphs-everywhere/</guid><pubDate>Mon, 16 Sep 2019 21:17:40 GMT</pubDate></item><item><title>Learning Git</title><link>https://project-delphi.github.io/blog/learning-git/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Learning-Git"&gt;Learning Git&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Learning-Git"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;&lt;img src="https://cdn-images-1.medium.com/max/2000/1*0o9GZUzXiNnI4poEvxvy8g.png#center" alt=""&gt;&lt;/p&gt;
-&lt;p&gt;I was recently asked how I would introduce git to new data scientists.&lt;/p&gt;
-&lt;p&gt;It's been so long since I was a noob to it, and really only picking up commands and understanding them as needed - that I decided to think it through from basics. Below are some broad steps, I'll try and write posts with links to resources on each of these.&lt;/p&gt;
-&lt;p&gt;A key part of understanding Git is that there are multiple interpretations on what is happening when using git - &lt;a href="http://www2.math.uu.se/~thulin/mm/breiman.pdf"&gt;[1]&lt;/a&gt;, the so called Rashomon effect. Also bear in mind that:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;a repository is a container, a hidden folder and sometimes referred to as the commit tree&lt;/li&gt;
-&lt;li&gt;there are many effective workflows for using git&lt;/li&gt;
-&lt;li&gt;there are multiple ways to achieve a desired outcome&lt;/li&gt;
-&lt;li&gt;several features of git that aren't explicitly related to one another&lt;/li&gt;
-&lt;li&gt;only some features are needed for certain workflows&lt;/li&gt;
-&lt;li&gt;some workflows rely on features (such as pull requests) that are not available in git, but through hosting services such as github and bitbucket&lt;/li&gt;
-&lt;li&gt;the git API has ~200 commands that act on the git repository object, about 40 of those commands are needed for 99% of use cases.&lt;/li&gt;
-&lt;li&gt;(~15 of those 40 commands have 4/5 regularly used flag options.)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Perhaps the best description of git is "it's a type of version control system for a project with features that enable collaboration between individual contributors" - &lt;a href="https://www.atlassian.com/git"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;In the end, the best way to operate git is to just use it.&lt;/p&gt;
-&lt;h3 id="A-Version-Control-System"&gt;A Version Control System&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#A-Version-Control-System"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A version control system (VCS) on a project allows making checkpoints, recording the state of the project - files and sub-folders, as it evolves over time. These checkpoints are recorded to a store using the difference between the current state and the previous checkpoint. Any VCS has methods to navigate to different states of the checkpoints. When called to a certain checkpoint, these methods change the repository container (files and sub-folders) to the state of the checkpoint.&lt;/p&gt;
-&lt;p&gt;Git is a type of VCS - it records checkpoints as commits and allows navigating them. These checkpoint commits point back to earlier commits, until the root commit, which is the first checkpoint. Therefore a sequence of commits forms a data structure that is a tree - a special kind of mathematical graph, often referred to as as the repository. Hence a commit has only one parent - another commit, unless a merge is being made.&lt;/p&gt;
-&lt;p&gt;To make a checkpoint, the incantation is a two-step procedure. First, files are marked as in a staging area. Second, once there is a coherent small piece of work in the staging area, this unit of work is checkpointed as a commit to the repository. The idea is that staging allows forming commits as a set of changes to a number of specific files, as opposed to changes that may not be relevant. In practice, many find that staging is an extra step - all files modified/created since a commit are committed to the next commit.&lt;/p&gt;
-&lt;p&gt;Nonetheless, in addition to navigating commits, some methods are needed to add, remove files to the staging area. In addition sometimes a block of changes can be stashed to a local store so that navigating commits can still be allowed.&lt;/p&gt;
-&lt;h3 id="The-Repository-Is-a-Commit-Graph"&gt;The Repository Is a Commit Graph&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#The-Repository-Is-a-Commit-Graph"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;As mentioned, these commits form a graph in the repository. The commits are Nodes and they point to parent commits. Navigating to a commit changes the repository to the state of the previous commit.&lt;/p&gt;
-&lt;h3 id="Branches:-Pointers-To-Nodes"&gt;Branches: Pointers To Nodes&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Branches:-Pointers-To-Nodes"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;A branch is just a moveable pointer to a particular leaf tip Node on the commit tree. When on a branch, the HEAD (reference to a commit) is automatically changed if a new commit is made.&lt;/p&gt;
-&lt;p&gt;A detached HEAD state is when a commit is navigated to without a branch. It is also possible to change the tip node of a branch by forcing a change.&lt;/p&gt;
-&lt;h3 id="Combining-Branches"&gt;Combining Branches&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Combining-Branches"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;&lt;img src="https://i.stack.imgur.com/nWYnQ.png" alt="Repo in Folder"&gt;&lt;/p&gt;
-&lt;p&gt;To deeply understand combining branches, we need to understand the storage locations and data model of git. However, as a user - the API, given through commands, is often enough:&lt;/p&gt;
-&lt;p&gt;There are three main ways to combine branches:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;merge &lt;/li&gt;
-&lt;li&gt;rebase &lt;/li&gt;
-&lt;li&gt;pull (which is a fetch followed by a merge for a remote branch)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;h4 id="Fetch"&gt;Fetch&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Fetch"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Remote repositories have local tracking branches when linked to a local repository. A fetch command updates the tracking branch to match the commits up to the tip of the remote repository's branch.&lt;/p&gt;
-&lt;h4 id="Merge"&gt;Merge&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Merge"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;It is possible to create a new commit which combines two branches. Merges happen when a commit is added to a branch that incorporates the tip commit of another branch. If there are conflicts, the git user has to choose how to fix those.&lt;/p&gt;
-&lt;p&gt;Once the merge is completed, the merge commit is the leaf tip on the branch being merged into. Depending on the workflow the branch that was merged from can be deleted.&lt;/p&gt;
-&lt;h4 id="Pull"&gt;Pull&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Pull"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;A pull is a fetch from remote repository branch, followed by a merge. If the merge fails, then the user is prompted to resolve the conflict or abort.&lt;/p&gt;
-&lt;h4 id="Rebase-And-Reset"&gt;Rebase And Reset&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Rebase-And-Reset"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h3 id="Commonly-Used-Git-Commands"&gt;Commonly Used Git Commands&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Commonly-Used-Git-Commands"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;h3 id="Remote-Repository"&gt;Remote Repository&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Remote-Repository"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;h3 id="Remote-Branches"&gt;Remote Branches&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Remote-Branches"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;h3 id="Collaborative-Git:-GitHub"&gt;Collaborative Git: GitHub&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Collaborative-Git:-GitHub"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;h3 id="WorkFlows"&gt;WorkFlows&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#WorkFlows"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;h4 id="Centralized-Workflow"&gt;Centralized Workflow&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Centralized-Workflow"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Feature-Branch-Workflow"&gt;Feature Branch Workflow&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Feature-Branch-Workflow"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Forking-Workflow"&gt;Forking Workflow&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Forking-Workflow"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="Git-Flow-Workflow"&gt;Git Flow Workflow&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#Git-Flow-Workflow"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="GitHub-Workflow"&gt;GitHub Workflow&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#GitHub-Workflow"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="GitLab-Workflow"&gt;GitLab Workflow&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#GitLab-Workflow"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;h4 id="One-Workflow"&gt;One Workflow&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/learning-git/#One-Workflow"&gt;¶&lt;/a&gt;&lt;/h4&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/learning-git/</guid><pubDate>Mon, 16 Sep 2019 21:16:03 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/graphs-graphs-everywhere/</guid><pubDate>Mon, 16 Sep 2019 21:17:40 GMT</pubDate></item></channel></rss>

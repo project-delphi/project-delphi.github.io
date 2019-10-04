@@ -11,11 +11,11 @@
  </url>
  <url>
   <loc>https://project-delphi.github.io/archive.html</loc>
-  <lastmod>2019-10-02T03:27:00Z</lastmod>
+  <lastmod>2019-10-04T15:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/</loc>
-  <lastmod>2019-10-01T01:44:00Z</lastmod>
+  <lastmod>2019-10-04T15:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/aiops-vs-mlops/</loc>
@@ -24,6 +24,10 @@
  <url>
   <loc>https://project-delphi.github.io/blog/causality-applications-in-2019/</loc>
   <lastmod>2019-09-17T01:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://project-delphi.github.io/blog/code-fragments-on-wikipedia/</loc>
+  <lastmod>2019-10-04T15:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/directed-acyclic-graphs/</loc>
@@ -43,7 +47,7 @@
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/index-1.html</loc>
-  <lastmod>2019-10-01T01:44:00Z</lastmod>
+  <lastmod>2019-10-04T15:17:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/intrusion-detection-system/</loc>
