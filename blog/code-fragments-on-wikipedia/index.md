@@ -15,6 +15,6 @@ It got me thinking. There really should be code guidelines and a major clean up 
 
 Something like a guidelines document for the major languages would be great. In addition, an effort to clean up code fragments on say the first 100, then next 400 articles in Machine Learning - that's important.
 
-Why do this? Wikipedia is a resource for the whole world. THe more people that are exposed to good coding guidelines, the healthier our community will be.
+Why do this? Wikipedia is a resource for the whole world. The more people in scientific computing that are exposed to good coding guidelines, the healthier our community will be.
 
-Community. Matters.
+Open. Source. Community.
