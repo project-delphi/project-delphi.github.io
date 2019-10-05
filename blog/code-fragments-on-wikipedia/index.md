@@ -15,6 +15,9 @@ It got me thinking. There really should be code guidelines and a major clean up 
 
 Something like a guidelines document for the major languages would be great. In addition, an effort to clean up code fragments on say the first 100 articles in Machine Learning - that's important.
 
+Brainwave - couldn't this be part of course requirements for graduate courses in various departments worldwide 📚. This would be a great learning exercise and help the broader community.
+
+
 Why do this? Wikipedia is a resource for the whole world. The more people in scientific computing that are exposed to good coding guidelines, the healthier our community will be.
 
 Open. Source. Community. 🌱
