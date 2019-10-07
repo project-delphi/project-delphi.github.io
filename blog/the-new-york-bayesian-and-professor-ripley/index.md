@@ -22,4 +22,4 @@ As I kept trawling, I came across a post from noted and prolific blogging Bayesi
 
 I believe Google's search engine had linked my previous search history to this query. I confirmed that incognito, this same links do not appear.
 
-Serendipity. Learning. From. Data.
+Serendipity. In. Learning. To. Learn. From. Data.
