@@ -1,5 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Sat, 05 Oct 2019 11:08:51 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Code Fragments On Wikipedia</title><link>https://project-delphi.github.io/blog/code-fragments-on-wikipedia/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;After I spoke at PyData Montreal about maintaining code quality in data science/machine learning - I showed a cleaned up code fragment for the PageRank algorithm in Python on &lt;a href="https://en.wikipedia.org/wiki/PageRank"&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Mon, 07 Oct 2019 01:43:31 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>The New York Bayesian And Professor Ripley</title><link>https://project-delphi.github.io/blog/the-new-york-bayesian-and-professor-ripley/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;I found myself Googling for a refresher on hierarchical models and random effects approaches to weights that have their own distribution. The terms that kept occurring where:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;fixed&lt;/code&gt; effects&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;random&lt;/code&gt; effects&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;mixed&lt;/code&gt; effects&lt;/li&gt;
+&lt;li&gt;Bayesian Hierarchical Models&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;And then I remembered &lt;code&gt;main&lt;/code&gt; effects and &lt;code&gt;interaction&lt;/code&gt; effects. Feeling more confident in the terminology of both frequentist &lt;code&gt;random effects&lt;/code&gt; and Bayesian &lt;code&gt;hierarchical models&lt;/code&gt; - being two sides of the same coin, I felt quite pleased.&lt;/p&gt;
+&lt;p&gt;As I kept trawling, I came across a post from noted and prolific blogging Bayesian - &lt;a href="http://www.stat.columbia.edu/~gelman/"&gt;Andrew Gelman&lt;/a&gt;. He had a &lt;a href="https://statmodeling.stat.columbia.edu/2011/12/17/ripley-on-model-selection-and-some-links-on-exploratory-model-analysis/"&gt;post&lt;/a&gt; about model selection mentioning my doctoral supervisor &lt;a href="http://www.stats.ox.ac.uk/~ripley/"&gt;Professor Ripley&lt;/a&gt;. It was good, and a reference to a talk I had not seen - so many ideas now mainstream and well elucidated are in this paper.&lt;/p&gt;
+&lt;p&gt;I believe Google's search engine had linked my previous search history to this query. I confirmed that incognito, this same links do not appear.&lt;/p&gt;
+&lt;p&gt;Serendipity. Learning. From. Data.&lt;/p&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/the-new-york-bayesian-and-professor-ripley/</guid><pubDate>Mon, 07 Oct 2019 01:25:01 GMT</pubDate></item><item><title>Code Fragments On Wikipedia</title><link>https://project-delphi.github.io/blog/code-fragments-on-wikipedia/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;After I spoke at PyData Montreal about maintaining code quality in data science/machine learning - I showed a cleaned up code fragment for the PageRank algorithm in Python on &lt;a href="https://en.wikipedia.org/wiki/PageRank"&gt;Wikipedia&lt;/a&gt;.&lt;/p&gt;
 &lt;p&gt;It got me thinking. There really should be code guidelines and a major clean up effort in the wikipedia sections for Machine Learning/Statistics.&lt;/p&gt;
 &lt;p&gt;Something like a guidelines document for the major languages would be great. In addition, an effort to clean up code fragments on say the first 100 articles in Machine Learning - that's important.&lt;/p&gt;
 &lt;p&gt;Brainwave - couldn't this be part of course requirements for graduate courses in various departments worldwide 📚. This would be a great learning exercise and help the broader community.&lt;/p&gt;
@@ -186,35 +196,4 @@
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/causality-applications-in-2019/</guid><pubDate>Mon, 16 Sep 2019 21:22:26 GMT</pubDate></item><item><title>Graphs, Graphs, Everywhere</title><link>https://project-delphi.github.io/blog/graphs-graphs-everywhere/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Graphs,-Graphs,-Everywhere"&gt;Graphs, Graphs, Everywhere&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/graphs-graphs-everywhere/#Graphs,-Graphs,-Everywhere"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;I've revisited &lt;a href="https://en.wikipedia.org/wiki/Graph_theory"&gt;mathematical graphs&lt;/a&gt; (as opposed to &lt;a href="https://en.wikipedia.org/wiki/Chart"&gt;charts&lt;/a&gt;) in a number of settings in recent weeks. It's great to see graph theory at work in the world of 1's and 0's.&lt;/p&gt;
-&lt;h3 id="Git"&gt;Git&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/graphs-graphs-everywhere/#Git"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;I'm preparing a short course on git - and the most natural way to introduce the topic is with mathematical graphs. There's a lot to this perspective but broadly - commits are child nodes of earlier commits, going back to the root. Branches are just movable pointers to different commits.&lt;/p&gt;
-&lt;h3 id="Machine-Learning-On-Graphs"&gt;Machine Learning On Graphs&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/graphs-graphs-everywhere/#Machine-Learning-On-Graphs"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Arxiv papers are regularly raising the issue that many of the successful algorithms in Machine Learning depend on euclidean distance between points - &lt;a href="https://arxiv.org/pdf/1611.08097.pdf"&gt;[1]&lt;/a&gt;. However so much of our experiences and real world data records are not euclidean - in particular metric geometry seldom holds. There's been an explosion of research in applying graphs and manifolds as inputs and outputs to machine learning.&lt;/p&gt;
-&lt;h4 id="Neural-Networks"&gt;Neural Networks&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/graphs-graphs-everywhere/#Neural-Networks"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;Superficially choosing a neural network architecture is all about choosing a graph structure where inputs can flow to outputs over the edges, with many layers (Deep Learning) producing impressive results for a range of problems. Recurrent Neural Networks are also a type of graph, a linked list. Just worth noting the graphs, but tangential to non-euclidean learning.&lt;/p&gt;
-&lt;p&gt;Convolutional neural networks - can be cast as local graph filters convolving to tensor data - particularly pixel data.&lt;/p&gt;
-&lt;h4 id="Relationship-Networks"&gt;Relationship Networks&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/graphs-graphs-everywhere/#Relationship-Networks"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;More interesting, relationship networks data is being generated all the time. People and businesses can be observed as nodes and the relationships, transactions between them as edges connecting nodes.&lt;/p&gt;
-&lt;p&gt;There is active research on graphs with convolutional learning to learn graph structure with astounding results - &lt;a href="https://tkipf.github.io/graph-convolutional-networks/"&gt;[2]&lt;/a&gt;.&lt;/p&gt;
-&lt;p&gt;Such networks are non-metric and more so, non-euclidean by nature; graphs are just a natural way to model them.&lt;/p&gt;
-&lt;h4 id="Causality"&gt;Causality&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/graphs-graphs-everywhere/#Causality"&gt;¶&lt;/a&gt;&lt;/h4&gt;&lt;p&gt;In trying to understand causality, assuming we have enough relevant covariates, then blocking confounders allows &lt;em&gt;ignorability&lt;/em&gt; to hold and then aggregation can be applied to estimate causal relationships.&lt;/p&gt;
-&lt;p&gt;One popular way to do this is using Judea Pearl's do-calculus on DAGs of probability distributions and relationships between covariates and targets. Although somewhat unwieldy this is a promising area to model causality - along with variational Bayes methods. These DAG's are just graph structures where the relationships between variables are edges, and the variables themselves are node.&lt;/p&gt;
-&lt;p&gt;Graphs seem to be occurring with increasing regularity. Their use to solve problems will be fascinating.&lt;/p&gt;
-&lt;p&gt;Watch. This. Space.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/graphs-graphs-everywhere/</guid><pubDate>Mon, 16 Sep 2019 21:17:40 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/causality-applications-in-2019/</guid><pubDate>Mon, 16 Sep 2019 21:22:26 GMT</pubDate></item></channel></rss>
