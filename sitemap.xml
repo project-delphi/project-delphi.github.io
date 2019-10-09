@@ -11,11 +11,11 @@
  </url>
  <url>
   <loc>https://project-delphi.github.io/archive.html</loc>
-  <lastmod>2019-10-07T01:44:00Z</lastmod>
+  <lastmod>2019-10-09T02:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/</loc>
-  <lastmod>2019-10-07T01:43:00Z</lastmod>
+  <lastmod>2019-10-09T02:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/aiops-vs-mlops/</loc>
@@ -47,7 +47,7 @@
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/index-1.html</loc>
-  <lastmod>2019-10-07T01:43:00Z</lastmod>
+  <lastmod>2019-10-09T02:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/intrusion-detection-system/</loc>
@@ -60,6 +60,10 @@
  <url>
   <loc>https://project-delphi.github.io/blog/learning-git/</loc>
   <lastmod>2019-09-17T01:22:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://project-delphi.github.io/blog/mixed-effects-aka-hierarchical-models-vs-resampling/</loc>
+  <lastmod>2019-10-09T02:03:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/mlops-teams-vs-tools/</loc>
