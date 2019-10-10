@@ -9,9 +9,9 @@
 .. type: text
 -->
 
-Investigating fixed effects, random effects, mixed effects I felt queasy having to remember all these terms. It reminded me of [lasso & ridge regression or L1 & L2]. Naming styles in statistics often feel unnecessarily complicated compared to computer science names. 
+Investigating fixed effects, random effects, mixed effects I felt queasy having to remember all these terms. It reminded me of [lasso & ridge regression or L1 & L2](https://stats.stackexchange.com/questions/200416/is-regression-with-l1-regularization-the-same-as-lasso-and-with-l2-regularizati) - Naming concepts in statistics often feel unnecessarily complicated compared to computer science. 
 
-This [post](https://statmodeling.stat.columbia.edu/2005/01/25/why_i_dont_use/) from Andrew Gelman made me think of mirror universes from the Star Trek Genre. 
+This [post](https://statmodeling.stat.columbia.edu/2005/01/25/why_i_dont_use/) from Andrew Gelman made me think of mirror universes from the Star Trek Genre.
 
 ![](https://wwwimage-secure.cbsstatic.com/base/files/cea5c227c75c9531_dsc_mirror_georgious.jpg)
 
