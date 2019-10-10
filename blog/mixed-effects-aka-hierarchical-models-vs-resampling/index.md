@@ -24,4 +24,9 @@ His point holds, many frequentist family models are just one or other way of say
 
 What has me interested, is if it's possible to model the fixed and random effects, or hierarhical model of feature weights through re-sampling strategies. I've never seen that done before.
 
+
+As much as I research online and refer to the biblical [ESLII](https://web.stanford.edu/~hastie/Papers/ESLII.pdf), the theory doesn't seem settled.
+
+A useful approach seems to be to bootstrap residuals after fitting mixed effects models. But it still requires specifying all the different kinds of effects.
+
 Great. Research. Topic.
