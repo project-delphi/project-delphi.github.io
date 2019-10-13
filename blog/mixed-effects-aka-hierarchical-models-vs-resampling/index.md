@@ -25,7 +25,7 @@ What has me interested, is if it's possible to model the fixed and random effect
 
 This would open up a third mirror universe where resampling strategies could be used to approximate mixed effects/hierarchical models.
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt1y4TKw9m_ojbyAIdC1UfuNfBvBknU9GvbKx0lr5DWAGumBiEYQ | width=400)
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt1y4TKw9m_ojbyAIdC1UfuNfBvBknU9GvbKx0lr5DWAGumBiEYQ)
 
 
 As much as I research online and refer to the biblical [ESLII](https://web.stanford.edu/~hastie/Papers/ESLII.pdf), the theory doesn't seem settled.
