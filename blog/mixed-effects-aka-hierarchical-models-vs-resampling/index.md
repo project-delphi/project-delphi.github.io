@@ -21,12 +21,16 @@ His point holds, many frequentist family models are just one or other way of say
 
 ![](https://i.imgflip.com/3craxc.jpg)
 
-
 What has me interested, is if it's possible to model the fixed and random effects, or hierarhical model of feature weights through re-sampling strategies. I've never seen that done before.
 
+This would open up a third mirror universe where resampling strategies could be used to approximate mixed effects/hierarchical models.
 
 As much as I research online and refer to the biblical [ESLII](https://web.stanford.edu/~hastie/Papers/ESLII.pdf), the theory doesn't seem settled.
 
-A useful approach seems to be to bootstrap residuals after fitting mixed effects models. But it still requires specifying all the different kinds of effects.
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt1y4TKw9m_ojbyAIdC1UfuNfBvBknU9GvbKx0lr5DWAGumBiEYQ)
+
+A useful approach seems to be to bootstrap residuals after fitting mixed effects models. But it still requires specifying all the different kinds of effects. So Reverend Bayes strikes back - encoding our beliefs is needed although we might dress it up as mixed effects modelling or hide it behind parametric models.
+
+Having said that - there are a variety of excellent ideas from [Bradley Efron](http://statweb.stanford.edu/~ckirby/brad/papers/), but again the ideas doesn't seem to have propagated to the application domain widely. (Assuming that being battle tested in open source competitions is  the way to verify the validity of theories.)
 
 Great. Research. Topic.
