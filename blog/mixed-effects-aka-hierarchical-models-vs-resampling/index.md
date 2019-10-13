@@ -25,9 +25,12 @@ What has me interested, is if it's possible to model the fixed and random effect
 
 This would open up a third mirror universe where resampling strategies could be used to approximate mixed effects/hierarchical models.
 
+![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt1y4TKw9m_ojbyAIdC1UfuNfBvBknU9GvbKx0lr5DWAGumBiEYQ | width=400)
+
+
 As much as I research online and refer to the biblical [ESLII](https://web.stanford.edu/~hastie/Papers/ESLII.pdf), the theory doesn't seem settled.
 
-![](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQt1y4TKw9m_ojbyAIdC1UfuNfBvBknU9GvbKx0lr5DWAGumBiEYQ)
+
 
 A useful approach seems to be to bootstrap residuals after fitting mixed effects models. But it still requires specifying all the different kinds of effects. So Reverend Bayes strikes back - encoding our beliefs is needed although we might dress it up as mixed effects modelling or hide it behind parametric models.
 
