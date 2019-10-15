@@ -33,6 +33,6 @@ I suspect that these approaches are fine when the differences between samples ar
 
 So a problem exists. We don't allow in our inference for data that is plausibly similar to what was actually observed. For a few different observations in one or other sample, our inferences can be reversed.
 
-The remedies are to use Bayesian or Ensembling strategies to loosen a model's adherence to the data. If we had big data, then this is less necessary.
+The remedies are to use Bayesian or Ensembling strategies to loosen a model's adherence to the data. If we had large samples (Yay! big data Yay!), then this is less necessary.
 
 I'm quite excited to read up on Bayesian fields as a way to allow the data to breathe when making inferences. 🧗🏾‍
