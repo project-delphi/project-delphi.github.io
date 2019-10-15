@@ -12,6 +12,8 @@
 I found myself thinking about treatment effects on randomized small samples for continuous data (targets) with no features.
 
 There's no need to worry about confounders since there are no features and we have randomizations. 🎲
+Simpson's paradox doesn't apply when there are no features.
+
 
 One might say that we are looking univariate continuous data from two or more different small samples.
 
