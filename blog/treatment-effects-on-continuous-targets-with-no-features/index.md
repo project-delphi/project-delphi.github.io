@@ -11,13 +11,9 @@
 
 I found myself thinking about treatment effects on randomized small samples for continuous data (targets) with no features.
 
-There's no need to worry about confounders since there are no features and we have randomizations. 🎲
-Simpson's paradox doesn't apply when there are no features.
+There's no need to worry about confounders since there are no features and we have randomizations - 🎲. Simpson's paradox doesn't apply when there are no features.
 
-
-One might say that we are looking univariate continuous data from two or more different small samples.
-
-Small is relative, but less than a few thousand certainly causes noise in estimates for many kinds of univariate continuous distribution.
+One might say that we are looking univariate continuous data from two or more different small samples.Small is relative, but less than a few thousand certainly causes noise in estimates for many kinds of univariate continuous distribution.
 
 So what is the objective from a machine learning perspective, and what can be done?
 
@@ -30,7 +26,6 @@ Well, this could be cast as an unsupervised learning problem. Some possibilities
 * compare density estimates: estimate densities for different samples. Some good ways to do this are:
     - sums of weighted observation centered kernels
     - Bayesian hierarchical mixtures of densities (which lends itself to clustering)
-
 
 In particular there are many density and non-parametric based approaches (Mann-Whitney-Wilcoxon, Anderson-Darling, Kolmogorov-Smirov, Earth Mover's Distance and more).
 
