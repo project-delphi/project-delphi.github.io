@@ -27,12 +27,12 @@ Well, this could be cast as an unsupervised learning problem. Some possibilities
     - sums of weighted observation centered kernels
     - Bayesian hierarchical mixtures of densities (which lends itself to clustering)
 
-In particular there are many density and non-parametric based approaches (Mann-Whitney-Wilcoxon, Anderson-Darling, Kolmogorov-Smirov, permutation test, Earth Mover's Distance and visually inspecting densities and more). 
+In particular there are many density and non-parametric based approaches (Mann-Whitney-Wilcoxon, Anderson-Darling, Kolmogorov-Smirov, permutation test, Earth Mover's Distance and visually inspecting densities and more).
 
 I suspect that these approaches are fine when the differences between samples are quite pronounced - but when the treatment effects are subtle - it will be difficult to tell noise from genuine effects.
 
 So a problem exists. We don't allow in our inference for data that is plausibly similar to what was actually observed. For a few different observations in one or other sample, our inferences can be reversed.
 
-The remedies are to use Bayesian or Ensembling strategies to loosen a model's adherence to the data. If we had large samples (Yay! big data Yay!), then this is less necessary.
+The remedies are to use Bayesian or Ensembling strategies to loosen a model's adherence and enthusiasm to the data observed. If we had large samples (Yay! big data Yay!), then this is less necessary.
 
 I'm quite excited to read up on Bayesian fields as a way to allow the data to breathe when making inferences. 🧗🏾‍
