@@ -13,7 +13,7 @@ I found myself thinking about treatment effects on randomized small samples for 
 
 There's no need to worry about confounders since there are no features and we have randomizations - 🎲. Simpson's paradox doesn't apply when there are no features.
 
-One might say that we are looking univariate continuous data from two or more different small samples. Small is relative, but less than a few thousand certainly causes noise in estimates for many kinds of univariate continuous distribution.
+One might say that we are looking univariate continuous data from two or more different small samples. Small is relative, but less than a few thousand examples certainly causes noise in estimates for many kinds of univariate continuous distribution.
 
 So what is the objective from a machine learning perspective, and what can be done?
 
