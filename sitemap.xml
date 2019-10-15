@@ -11,11 +11,11 @@
  </url>
  <url>
   <loc>https://project-delphi.github.io/archive.html</loc>
-  <lastmod>2019-10-13T20:01:00Z</lastmod>
+  <lastmod>2019-10-15T01:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/</loc>
-  <lastmod>2019-10-09T02:03:00Z</lastmod>
+  <lastmod>2019-10-15T01:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/aiops-vs-mlops/</loc>
@@ -47,7 +47,7 @@
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/index-1.html</loc>
-  <lastmod>2019-10-09T02:03:00Z</lastmod>
+  <lastmod>2019-10-15T01:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/intrusion-detection-system/</loc>
@@ -72,6 +72,10 @@
  <url>
   <loc>https://project-delphi.github.io/blog/the-new-york-bayesian-and-professor-ripley/</loc>
   <lastmod>2019-10-07T01:43:00Z</lastmod>
+ </url>
+ <url>
+  <loc>https://project-delphi.github.io/blog/treatment-effects-on-continuous-targets-with-no-features/</loc>
+  <lastmod>2019-10-15T01:52:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/when-is-causality-important/</loc>
