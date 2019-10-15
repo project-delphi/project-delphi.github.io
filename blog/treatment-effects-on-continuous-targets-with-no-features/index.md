@@ -35,4 +35,4 @@ So a problem exists. We don't allow in our inference for data that is plausibly 
 
 The remedies are to use Bayesian or Ensembling strategies to loosen a model's adherence to and enthusiasm for the data observed. If we had large samples (Yay! big data Yay!), then this is less necessary.
 
-I'm quite excited to read up on Bayesian fields as a way to allow the data to breathe when making estimating densities. 🧗🏾‍
+I'm quite excited to read up on Bayesian fields as a way to allow the data to breathe when making estimates of densities. 🧗🏾‍
