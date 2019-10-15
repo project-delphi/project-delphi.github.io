@@ -29,7 +29,7 @@ Well, this could be cast as an unsupervised learning problem. Some possibilities
 
 In particular there are many non-parametric chart and univariate statistic based approaches (Mann-Whitney-Wilcoxon, Anderson-Darling, Kolmogorov-Smirov, permutation test, Earth Mover's Distance, visually inspecting densities and more).
 
-I suspect that these approaches are fine when the differences between samples are quite pronounced - but when the treatment effects are subtle - it will be difficult to tell noise from genuine effects.
+I suspect that any of these approaches are fine when the differences between samples are quite pronounced - but when the treatment effects are subtle but samples - it will be difficult to tell noise from genuine effects.
 
 So a problem exists. We don't allow in our inference for data that is plausibly similar to what was actually observed. For a few different observations in one or other sample, our inferences can be reversed.
 
