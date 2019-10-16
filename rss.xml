@@ -1,5 +1,26 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Tue, 15 Oct 2019 23:12:30 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Treatment Effects on Continuous Targets with No Features</title><link>https://project-delphi.github.io/blog/treatment-effects-on-continuous-targets-with-no-features/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;I found myself thinking about treatment effects on randomized small samples for continuous data (targets) with no features.&lt;/p&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Wed, 16 Oct 2019 03:46:21 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>On Robust ML Production Systems, Maybe</title><link>https://project-delphi.github.io/blog/on-robust-ml-production-systems-maybe/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;Recently I was thinking of a recipe for robust ML systems in production. This was following from my talk at PyData Montreal discussing the same topic - where I alluded to building reflective culture and attitudes ingrained into the development process.&lt;/p&gt;
+&lt;p&gt;I drew a blank as a first concrete recipe not just culture and ideas - since there's so much to making ML work in production.&lt;/p&gt;
+&lt;p&gt;Can this recipe be codified into a set of principles and working strategies which get the desired result? I'm thinking of an agile manifesto for ML in production, something with cool sounding acronyms.&lt;/p&gt;
+&lt;p&gt;First let's be clear about our objective.&lt;/p&gt;
+&lt;p&gt;What do we mean by "robust ML systems in production". Some desirable qualities that come to mind are:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;scalability under plausible increase of data dimensions&lt;/li&gt;
+&lt;li&gt;asynchronous scaling&lt;/li&gt;
+&lt;li&gt;sensible handling for unexpected data&lt;/li&gt;
+&lt;li&gt;graceful exit/handling of errors&lt;/li&gt;
+&lt;li&gt;fast response scaling under plausible request load&lt;/li&gt;
+&lt;li&gt;tolerance to network errors&lt;/li&gt;
+&lt;li&gt;tolerance of errors in training data&lt;/li&gt;
+&lt;li&gt;robust to changes in code development&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Some of these requirements overlap with agile methodologies for modern web development. Which makes sense, since most useful software makes use of the web. But in addition, there are guards to areas of brittleness in ML systems.&lt;/p&gt;
+&lt;p&gt;Much of this is discussed in the now famous 2015 &lt;a href="https://papers.nips.cc/paper/5656-hidden-technical-debt-in-machine-learning-systems.pdf"&gt;Technical Debt Paper&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;What is needed is systems that work well enough when deployed live in the field - with web scale of data and networked requests.&lt;/p&gt;
+&lt;p&gt;I wrote in an &lt;a href="https://project-delphi.github.io/blog/mlops-teams-vs-tools/"&gt;earlier post&lt;/a&gt; how tools can help empower the individual developer. However, that's not the same as an ML in production manifesto.&lt;/p&gt;
+&lt;p&gt;Perhaps pruning a composite list from many practitioners and paper reviews.&lt;/p&gt;
+&lt;p&gt;How again was the &lt;a href="https://agilemanifesto.org/"&gt;agile manifesto&lt;/a&gt; generated all those years ago at a Ski resort in Utah?&lt;/p&gt;
+&lt;p&gt;Reflective. Practice.&lt;/p&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/on-robust-ml-production-systems-maybe/</guid><pubDate>Wed, 16 Oct 2019 00:29:57 GMT</pubDate></item><item><title>Treatment Effects on Continuous Targets with No Features</title><link>https://project-delphi.github.io/blog/treatment-effects-on-continuous-targets-with-no-features/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;p&gt;I found myself thinking about treatment effects on randomized small samples for continuous data (targets) with no features.&lt;/p&gt;
 &lt;p&gt;There's no need to worry about confounders since there are no features and we have randomizations - 🎲. Simpson's paradox doesn't apply when there are no features.&lt;/p&gt;
 &lt;p&gt;One might say that we are looking univariate continuous data from two or more different small samples. Small is relative, but less than a few thousand examples certainly causes noise in estimates for many kinds of univariate continuous distribution.&lt;/p&gt;
 &lt;p&gt;So what is the objective from a machine learning perspective? and what can be done?&lt;/p&gt;
@@ -161,41 +182,4 @@
 
 &lt;/div&gt;
 &lt;/div&gt;
-&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/directed-acyclic-graphs/</guid><pubDate>Wed, 18 Sep 2019 21:26:42 GMT</pubDate></item><item><title>Featureless Machine Learning: Classification</title><link>https://project-delphi.github.io/blog/featureless-machine-learning-classification/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
-&lt;/div&gt;&lt;div class="inner_cell"&gt;
-&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
-&lt;h2 id="Classification-Without-Features"&gt;Classification Without Features&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/featureless-machine-learning-classification/#Classification-Without-Features"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;p&gt;Classification is applicable to new instances of categorical data - data that belongs to one of several types (or classes), the number of classes usually inferred from the data. This is discrete data. The major types of classes are:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;binary (only two classes)&lt;/li&gt;
-&lt;li&gt;multinomial (K classes with $K \geq 1$)&lt;/li&gt;
-&lt;li&gt;ordinal (K classes with an ordering relation between them)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;When there are no features, we can work with categorical data:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;describe the data with the distribution over the classes&lt;/li&gt;
-&lt;li&gt;summarize the distribution with statistics&lt;/li&gt;
-&lt;li&gt;instantiate classifiers that make use of the distribution&lt;/li&gt;
-&lt;li&gt;generate sample variates from the distribution&lt;/li&gt;
-&lt;li&gt;make use of bar charts, pie charts and tables to specify the distribution&lt;/li&gt;
-&lt;li&gt;produce ROC, AUC metrics and their charts for featureless classifiers.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;If the data is a sample (usually the case), then the sample distribution is used as a proxy for the true distribution. The other useful strategy is use ensembling (such as bootstrap) to have a more robust (and less sticky to the data) estimate of the distribution.&lt;/p&gt;
-&lt;p&gt;If the number of classes, K is very large (&amp;gt;15) - then interpreting charts becomes almost impossible - other than coarse proportions of the most frequent classes. The relativities don't come across well in charts or tables - so understanding is lost - unless the distribution is flat or dominated by a few classes; one might do well to aggregate the classes back up again.&lt;/p&gt;
-&lt;p&gt;So let's roll these descriptions and predictions out using pandas, statsmodels, seaborn and sklearn.&lt;/p&gt;
-
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div class="cell border-box-sizing code_cell rendered"&gt;
-&lt;div class="input"&gt;
-&lt;div class="prompt input_prompt"&gt;In [ ]:&lt;/div&gt;
-&lt;div class="inner_cell"&gt;
-    &lt;div class="input_area"&gt;
-&lt;div class=" highlight hl-ipython3"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt; 
-&lt;/pre&gt;&lt;/div&gt;
-
-    &lt;/div&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-
-&lt;/div&gt;&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/featureless-machine-learning-classification/</guid><pubDate>Wed, 18 Sep 2019 00:28:45 GMT</pubDate></item></channel></rss>
+&lt;/div&gt;</description><guid>https://project-delphi.github.io/blog/directed-acyclic-graphs/</guid><pubDate>Wed, 18 Sep 2019 21:26:42 GMT</pubDate></item></channel></rss>

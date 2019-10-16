@@ -72,7 +72,69 @@ navbar-dark bg-dark
 
     
 <div class="postindex">
-    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="intrusion-detection-system/" class="u-url">Intrusion Detection System</a></h1>
+    <article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="featureless-machine-learning-classification/" class="u-url">Featureless Machine Learning: Classification</a></h1>
+        <div class="metadata">
+            <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
+                Ravi Kalia
+            </span></p>
+            <p class="dateline">
+            <a href="featureless-machine-learning-classification/" rel="bookmark">
+            <time class="published dt-published" datetime="2019-09-17T20:28:45-04:00" itemprop="datePublished" title="2019-09-17">2019-09-17</time></a>
+            </p>
+                <p class="commentline">
+        
+    <a href="featureless-machine-learning-classification/#disqus_thread" data-disqus-identifier="cache/posts/featureless-machine-learning-classification.html">Comments</a>
+
+
+        </p>
+</div>
+    </header><div class="e-content entry-content">
+    <div>
+<div class="cell border-box-sizing text_cell rendered">
+<div class="prompt input_prompt">
+</div>
+<div class="inner_cell">
+<div class="text_cell_render border-box-sizing rendered_html">
+<h2 id="Classification-Without-Features">Classification Without Features<a class="anchor-link" href="featureless-machine-learning-classification/#Classification-Without-Features">¶</a>
+</h2>
+<p>Classification is applicable to new instances of categorical data - data that belongs to one of several types (or classes), the number of classes usually inferred from the data. This is discrete data. The major types of classes are:</p>
+<ul>
+<li>binary (only two classes)</li>
+<li>multinomial (K classes with $K \geq 1$)</li>
+<li>ordinal (K classes with an ordering relation between them)</li>
+</ul>
+<p>When there are no features, we can work with categorical data:</p>
+<ul>
+<li>describe the data with the distribution over the classes</li>
+<li>summarize the distribution with statistics</li>
+<li>instantiate classifiers that make use of the distribution</li>
+<li>generate sample variates from the distribution</li>
+<li>make use of bar charts, pie charts and tables to specify the distribution</li>
+<li>produce ROC, AUC metrics and their charts for featureless classifiers.</li>
+</ul>
+<p>If the data is a sample (usually the case), then the sample distribution is used as a proxy for the true distribution. The other useful strategy is use ensembling (such as bootstrap) to have a more robust (and less sticky to the data) estimate of the distribution.</p>
+<p>If the number of classes, K is very large (&gt;15) - then interpreting charts becomes almost impossible - other than coarse proportions of the most frequent classes. The relativities don't come across well in charts or tables - so understanding is lost - unless the distribution is flat or dominated by a few classes; one might do well to aggregate the classes back up again.</p>
+<p>So let's roll these descriptions and predictions out using pandas, statsmodels, seaborn and sklearn.</p>
+
+</div>
+</div>
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In [ ]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span> 
+</pre></div>
+
+    </div>
+</div>
+</div>
+
+</div>
+</div>
+    </div>
+    </article><article class="h-entry post-text" itemscope="itemscope" itemtype="http://schema.org/Article"><header><h1 class="p-name entry-title"><a href="intrusion-detection-system/" class="u-url">Intrusion Detection System</a></h1>
         <div class="metadata">
             <p class="byline author vcard"><span class="byline-name fn" itemprop="author">
                 Ravi Kalia
