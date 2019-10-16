@@ -11,7 +11,7 @@
 
 Recently I was thinking of a recipe for robust ML systems in production. This was following from my talk at PyData Montreal discussing the same topic - where I alluded to building reflective culture and attitudes ingrained into the development process.
 
-I drew a blank as a first concrete recipe -- not just culture and ideas -- since there's so much to making ML work in production.
+I drew a blank as a first concrete recipe; not just culture and ideas - since there's so much to making ML work in production.
 
 Can this recipe be codified into a set of principles and working strategies which get the desired result? I'm thinking of an agile manifesto for ML in production, something with cool sounding acronyms.
 
