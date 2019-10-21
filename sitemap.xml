@@ -11,11 +11,11 @@
  </url>
  <url>
   <loc>https://project-delphi.github.io/archive.html</loc>
-  <lastmod>2019-10-18T02:06:00Z</lastmod>
+  <lastmod>2019-10-21T03:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/</loc>
-  <lastmod>2019-10-16T03:46:00Z</lastmod>
+  <lastmod>2019-10-21T03:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/aiops-vs-mlops/</loc>
@@ -34,6 +34,10 @@
   <lastmod>2019-09-18T21:35:00Z</lastmod>
  </url>
  <url>
+  <loc>https://project-delphi.github.io/blog/docker-for-macos-images-for-jupyter-notebooks/</loc>
+  <lastmod>2019-10-21T03:08:00Z</lastmod>
+ </url>
+ <url>
   <loc>https://project-delphi.github.io/blog/featureless-machine-learning-classification/</loc>
   <lastmod>2019-09-18T01:54:00Z</lastmod>
  </url>
@@ -47,7 +51,7 @@
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/index-1.html</loc>
-  <lastmod>2019-10-16T03:46:00Z</lastmod>
+  <lastmod>2019-10-21T03:08:00Z</lastmod>
  </url>
  <url>
   <loc>https://project-delphi.github.io/blog/intrusion-detection-system/</loc>
