@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Mon, 21 Oct 2019 10:28:47 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Jupyter Docker Stacks</title><link>https://project-delphi.github.io/blog/jupyter-docker-stacks/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Ravi Kalia Blog</title><link>https://project-delphi.github.io/</link><description>Ravi Kalia's Blog</description><atom:link href="https://project-delphi.github.io/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>en</language><copyright>Contents © 2019 &lt;a href="mailto:ravkalia@gmail.com"&gt;Ravi Kalia&lt;/a&gt; </copyright><lastBuildDate>Mon, 21 Oct 2019 10:34:08 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Jupyter Docker Stacks</title><link>https://project-delphi.github.io/blog/jupyter-docker-stacks/</link><dc:creator>Ravi Kalia</dc:creator><description>&lt;div&gt;&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
 &lt;/div&gt;&lt;div class="inner_cell"&gt;
 &lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
 &lt;h2 id="Jupyter-Docker-Stacks"&gt;Jupyter Docker Stacks&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/jupyter-docker-stacks/#Jupyter-Docker-Stacks"&gt;¶&lt;/a&gt;&lt;/h2&gt;&lt;h3 id="DevOps"&gt;DevOps&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/jupyter-docker-stacks/#DevOps"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;I have about 7 years of experience with DevOps methodology. It’s moved so fast and keeps going that early experiences with Chef, Ansible and earlier versions of Docker seem irrelevant. One sticking point I remember is the introduction of Docker and how it affected developers on Apple appliances. The Mac operating systems (OSX, macOS) have traditionally not played well with Docker.&lt;/p&gt;
@@ -27,7 +27,46 @@
 &lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;However, let’s scratch that. If we trust users to run  docker-compose files from inside their projects then we shouldn’t have record how their directories are laid out.&lt;/p&gt;
 &lt;p&gt;Example Docker File&lt;/p&gt;
-&lt;p&gt;&lt;a href="https://github.com/stefanproell/jupyter-notebook-docker-compose"&gt;https://github.com/stefanproell/jupyter-notebook-docker-compose&lt;/a&gt;&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class="cell border-box-sizing text_cell rendered"&gt;&lt;div class="prompt input_prompt"&gt;
+&lt;/div&gt;&lt;div class="inner_cell"&gt;
+&lt;div class="text_cell_render border-box-sizing rendered_html"&gt;
+&lt;h3 id="Links"&gt;Links&lt;a class="anchor-link" href="https://project-delphi.github.io/blog/jupyter-docker-stacks/#Links"&gt;¶&lt;/a&gt;&lt;/h3&gt;&lt;p&gt;Some links I found useful in composing this post:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://unsupervisedpandas.com/data-science/docker-for-data-science/"&gt;https://unsupervisedpandas.com/data-science/docker-for-data-science/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://docs.docker.com/compose/gettingstarted/"&gt;https://docs.docker.com/compose/gettingstarted/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://docs.docker.com/docker-for-mac/install/"&gt;https://docs.docker.com/docker-for-mac/install/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://docs.docker.com/compose/compose-file/#caching-options-for-volume-mounts-docker-for-mac"&gt;https://docs.docker.com/compose/compose-file/#caching-options-for-volume-mounts-docker-for-mac&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://vivait.co.uk/labs/docker-for-mac-performance-using-nfs"&gt;https://vivait.co.uk/labs/docker-for-mac-performance-using-nfs&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://stackoverflow.com/questions/43383276/how-does-docker-run-a-linux-kernel-under-macos-host"&gt;https://stackoverflow.com/questions/43383276/how-does-docker-run-a-linux-kernel-under-macos-host&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://medium.com/fundbox-engineering/overview-d3759e83969c"&gt;https://medium.com/fundbox-engineering/overview-d3759e83969c&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://spin.atomicobject.com/2019/10/14/docker-slow-mounted-volumes/"&gt;https://spin.atomicobject.com/2019/10/14/docker-slow-mounted-volumes/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://engageinteractive.co.uk/blog/making-docker-faster-on-mac"&gt;https://engageinteractive.co.uk/blog/making-docker-faster-on-mac&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://blog.codeship.com/docker-for-windows-linux-and-mac/"&gt;https://blog.codeship.com/docker-for-windows-linux-and-mac/&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://en.wikipedia.org/wiki/Berkeley_Software_Distribution"&gt;https://en.wikipedia.org/wiki/Berkeley_Software_Distribution&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://towardsdatascience.com/jupyter-data-science-stack-docker-in-under-15-minutes-19d8f822bd45"&gt;https://towardsdatascience.com/jupyter-data-science-stack-docker-in-under-15-minutes-19d8f822bd45&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html"&gt;https://jupyter-docker-stacks.readthedocs.io/en/latest/index.html&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;&lt;a href="https://github.com/stefanproell/jupyter-notebook-docker-compose"&gt;https://github.com/stefanproell/jupyter-notebook-docker-compose&lt;/a&gt;&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;/div&gt;
 &lt;/div&gt;
