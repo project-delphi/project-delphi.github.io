@@ -10,11 +10,15 @@
 .. type: text
 -->
 
-#### September 2019 PyData Montreal
+#### November 2019 PyCon Canada, Toronto
+
+**Lightning Talk: Natural Language to Complex SQL within grasp**
+
+#### September 2019 PyData, Montreal
 
 **Invited Speaker: ML in Production**
 
-#### Aug 2019   Software Crafters Montreal
+#### Aug 2019   Software Crafters, Montreal
 
 **Lightning Talk: [Machine Learning Supervising TDD](https://medium.com/@ravikalia/machine-learning-supervising-tdd-ad46ab3a0e8c)**
 
