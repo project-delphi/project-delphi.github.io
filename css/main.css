@@ -625,5 +625,12 @@ li {
 
 footer {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+}
+
+.card {
+  background-color: #324759;
+  margin: 0.5rem;
+  padding: 0.2rem;
+  padding-left: 2rem;
 }
