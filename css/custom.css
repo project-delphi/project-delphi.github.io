@@ -78,8 +78,11 @@ nav > ul > li > a {
     font-size: 10px;
   }
 
-  footer {
+  footer * li {
     padding-bottom: 20px;
-    font-size: 10px;
+    font-size: 8px;
+  }
+  footer * a {
+    font-size: 8px;
   }
 }
